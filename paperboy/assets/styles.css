@@ -76,12 +76,12 @@ body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:var(--text
   .content > section:not(.hero){padding:16px;margin-bottom:14px}
   .site-header .wrap{padding:14px 16px}
   /* ensure hero content clears the fixed header on small screens */
-  .hero{padding-top:64px}
+  .hero{padding-top:96px}
 }
 
 @media (max-width:420px){
   /* slightly smaller top gap on very small screens so spacing feels balanced */
-  .hero{padding-top:56px}
+  .hero{padding-top:88px}
 }
 /* Download section */
 .download-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));align-items:start;gap:2px}
