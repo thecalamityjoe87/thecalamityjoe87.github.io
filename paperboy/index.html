@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Paperboy — native GTK news app. This is the project landing page.">
+  <title>Paperboy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">Paperboy</div>
+      <nav class="top-nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content" id="home">
+    <section class="hero">
+      <img class="hero-icon" src="assets/paperboy.png" alt="Paperboy icon" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thecalamityjoe87/paperboy/main/data/icons/256x256/paperboy.png'" />
+      <h1>Paperboy</h1>
+      <p class="lead">A simple news app written in Vala and built with GTK4 and Libadwaita. Paperboy aims to be a beautiful native news reader similar to Apple News — curated sources, custom feeds, and local news support.</p>
+      <p class="actions"><a class="btn primary" href="https://github.com/thecalamityjoe87/paperboy/releases" target="_blank">Releases</a> <a class="btn ghost" href="https://github.com/thecalamityjoe87/paperboy#readme">Read the README</a></p>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <ul class="feature-list">
+        <li><strong>Curated sources</strong> including The Guardian, Reddit, BBC, and FOX News.</li>
+        <li><strong>PaperboyAPI</strong> for aggregating articles from multiple sources and categories.</li>
+        <li><strong>Custom feeds</strong> — combine sources and categories to build personalized streams.</li>
+        <li><strong>Local news</strong> support so you can follow nearby stories.</li>
+      </ul>
+      <p class="muted"><strong>Note:</strong> Paperboy is in active development (alpha). Expect changes and occasional breakage.</p>
+    </section>
+
+    <section id="screenshots" class="features">
+      <h2>Screenshots</h2>
+      <div class="grid features-grid" style="margin-top:12px">
+        <div class="card"><img src="assets/screenshot.png" alt="screenshot" data-full="assets/screenshot.png"/></div>
+        <div class="card"><img src="assets/screenshot1.png" alt="screenshot1" data-full="assets/screenshot1.png"/></div>
+        <div class="card"><img src="assets/screenshot2.png" alt="screenshot2" data-full="assets/screenshot2.png"/></div>
+        <div class="card"><img src="assets/screenshot3.png" alt="screenshot3" data-full="assets/screenshot3.png"/></div>
+        <div class="card"><img src="assets/screenshot4.png" alt="screenshot4" data-full="assets/screenshot4.png"/></div>
+        <div class="card"><img src="assets/screenshot5.png" alt="screenshot5" data-full="assets/screenshot5.png"/></div>
+      </div>
+    </section>
+    </section>
+
+    <section id="download" class="download">
+      <h2>Download</h2>
+      <div class="grid download-grid" style="margin-top:12px">
+        <div class="card download-item">
+          <a href="https://github.com/thecalamityjoe87/paperboy/releases" target="_blank" aria-label="Download AppImage">
+            <img src="assets/appimage.png" alt="AppImage logo"/>
+            <div class="download-label">AppImage</div>
+          </a>
+        </div>
+        <div class="card download-item">
+          <a href="https://github.com/thecalamityjoe87/paperboy#readme" target="_blank" aria-label="Build it">
+            <img src="assets/compile.png" alt="Compile from source"/>
+            <div class="download-label">Compile for yourself</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Project Repository</h2>
+      <p>Project repository: <a href="https://github.com/thecalamityjoe87/paperboy" target="_blank">github.com/thecalamityjoe87/paperboy</a></p>
+      <p>Open issues or feature requests on the project's <a href="https://github.com/thecalamityjoe87/paperboy/issues" target="_blank">Issues</a> page.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Paperboy</small>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
