@@ -7,88 +7,245 @@
   <title>Paperboy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <div class="brand">Paperboy</div>
+      <div class="brand">
+        <img src="assets/paperboy.png" alt="" width="32" height="32" style="border-radius:8px" onerror="this.style.display='none'">
+        Paperboy
+      </div>
       <nav class="top-nav">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#download">Download</a>
+        <div class="nav-pill">
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#download">Download</a>
+        </div>
+        <a class="icon-link" href="https://github.com/thecalamityjoe87/paperboy" target="_blank" aria-label="GitHub repository">
+          <svg viewBox="0 0 16 16" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
       </nav>
     </div>
   </header>
 
   <main class="wrap content" id="home">
     <section class="hero">
-      <img class="hero-icon" src="assets/paperboy.png" alt="Paperboy icon" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thecalamityjoe87/paperboy/main/data/icons/256x256/paperboy.png'" />
-      <h1>Paperboy</h1>
-      <p class="lead">A simple news app written in Vala and built with GTK4 and Libadwaita. Paperboy aims to be a beautiful native news reader similar to Apple News — curated sources, custom feeds, and local news support.</p>
-      <p class="actions"><a class="btn primary" href="https://github.com/thecalamityjoe87/paperboy/releases" target="_blank">Releases</a> <a class="btn ghost" href="https://github.com/thecalamityjoe87/paperboy#readme">Read the README</a></p>
+      <span class="badge hero-in" style="--hero-delay:0s">🚧 Alpha — active development</span>
+      <img class="hero-banner hero-in" style="--hero-delay:.1s" src="assets/banner.png" alt="Paperboy" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thecalamityjoe87/paperboy/main/data/icons/paperboy-banner.png'" />
+      <h1 class="sr-only">Paperboy</h1>
+      <p class="lead hero-in" style="--hero-delay:.2s">A beautiful native news reader for the Linux desktop, built with GTK4 and Libadwaita. Curated sources, custom feeds, live sports, podcasts, and local news — all in one clean, distraction-free app.</p>
+      <p class="actions hero-in" style="--hero-delay:.3s">
+        <a class="btn primary" href="https://github.com/thecalamityjoe87/paperboy/releases" target="_blank">Download Paperboy</a>
+        <a class="btn ghost" href="https://github.com/thecalamityjoe87/paperboy#readme" target="_blank">Read the README</a>
+      </p>
     </section>
 
-    <section id="features" class="features">
-      <h2>🚀 Features</h2>
-      <ul class="feature-list">
-        <li>📰 <strong>Curated sources out of the box</strong> – including The Guardian, Reddit, BBC, and FOX News.</li>
-        <li>⚡ <strong>Powered by PaperboyAPI</strong> – fetches articles from multiple sources and categories seamlessly.</li>
-        <li>⭐ <strong>Follow news sources</strong> – users can add sources they find through the API.</li>
-        <li>📡 <strong>RSS feed support</strong> – add any RSS feeds to Paperboy to follow additional websites or blogs.</li>
-        <li>🛠️ <strong>Customizable feeds</strong> – mix and match sources and categories to create your own personalized news stream.</li>
-        <li>📖 <strong>In-app article viewing</strong> – read articles without leaving the app.</li>
-        <li>🌍 <strong>Local news support</strong> – stay updated on what’s happening in your area.</li>
+    <section id="features">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Everything you need to stay informed</h2>
+        <p>Paperboy pulls your news together in one native, GNOME-friendly app — no browser tabs required.</p>
+      </div>
+      <ul class="feature-grid">
+        <li class="feature-card reveal">
+          <span class="ficon">📰</span>
+          <h3>Curated sources</h3>
+          <p>Ready to go out of the box with The Guardian, BBC, FOX News, NPR, PBS, ABC News, Bloomberg, the NYT, and the WSJ.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">⚡</span>
+          <h3>Powered by PaperboyAPI</h3>
+          <p>Fetches articles from multiple sources and categories seamlessly, in the background.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">⭐</span>
+          <h3>Follow any source</h3>
+          <p>Discover and follow additional sources you find through the API as you browse.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">📡</span>
+          <h3>RSS feed support</h3>
+          <p>Add any RSS feed to follow your favorite websites and blogs alongside the news.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">🛠️</span>
+          <h3>Customizable feeds</h3>
+          <p>Mix and match sources and categories to build a news stream that's entirely yours.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">📖</span>
+          <h3>In-app reading</h3>
+          <p>Read full articles without leaving the app, with a built-in ad blocker for a cleaner experience.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">🌍</span>
+          <h3>Local news</h3>
+          <p>Uses your location, via GeoClue, to surface news for your area automatically.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">🏆</span>
+          <h3>Live sports scores</h3>
+          <p>Track live and recent game scores from a dedicated sports view.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">🎙️</span>
+          <h3>Podcasts</h3>
+          <p>Discover and subscribe to podcasts, with built-in playback, a persistent mini-player, and played/new episode tracking.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">🔗</span>
+          <h3>Share articles</h3>
+          <p>Quickly share the articles you find to other apps.</p>
+        </li>
       </ul>
-      <p class="muted"><strong>Note:</strong> Paperboy is in active development (alpha). Expect changes and occasional breakage.</p>
+      <p class="note reveal"><strong>Note:</strong> Paperboy is in active development (alpha). Expect changes and occasional breakage.</p>
     </section>
 
-    <section id="screenshots" class="features">
-      <h2>Screenshots</h2>
-      <div class="grid features-grid" style="margin-top:12px">
-        <div class="card"><img src="assets/screenshot.png" alt="screenshot" data-full="assets/screenshot.png"/></div>
-        <div class="card"><img src="assets/screenshot1.png" alt="screenshot1" data-full="assets/screenshot1.png"/></div>
-        <div class="card"><img src="assets/screenshot2.png" alt="screenshot2" data-full="assets/screenshot2.png"/></div>
-        <div class="card"><img src="assets/screenshot3.png" alt="screenshot3" data-full="assets/screenshot3.png"/></div>
-        <div class="card"><img src="assets/screenshot4.png" alt="screenshot4" data-full="assets/screenshot4.png"/></div>
-        <div class="card"><img src="assets/screenshot5.png" alt="screenshot5" data-full="assets/screenshot5.png"/></div>
-        <div class="card"><img src="assets/screenshot6.png" alt="screenshot6" data-full="assets/screenshot6.png"/></div>
-        <div class="card"><img src="assets/screenshot7.png" alt="screenshot7" data-full="assets/screenshot7.png"/></div>
+    <section id="screenshots">
+      <div class="section-head reveal">
+        <span class="eyebrow">Screenshots</span>
+        <h2>A closer look</h2>
+        <p>Click any screenshot to view it full size.</p>
+      </div>
+
+      <div class="showcase">
+        <!-- Hero feature: the main feed, given the full stage -->
+        <div class="showcase-feature reveal">
+          <div class="showcase-text">
+            <span class="eyebrow">Front page</span>
+            <h3>All your news, one clean feed</h3>
+            <p>Every source you follow, sorted into a single distraction-free timeline — top stories, categories, and your personal feed, all a click away in the sidebar.</p>
+          </div>
+          <div class="showcase-media screen-card"><img src="assets/screenshot.png" alt="Paperboy front page feed" loading="lazy" data-full="assets/screenshot.png"/></div>
+        </div>
+
+        <!-- Single alternating row for a change of rhythm -->
+        <div class="showcase-row reveal">
+          <div class="showcase-media screen-card"><img src="assets/screenshot9.png" alt="In-app article reading with ad blocker" loading="lazy" data-full="assets/screenshot9.png"/></div>
+          <div class="showcase-text">
+            <span class="eyebrow">In-app reading</span>
+            <h3>Read the story, not the ads</h3>
+            <p>Open any article right inside Paperboy with a built-in ad blocker, so you get a fast, clean reading experience without ever leaving the app.</p>
+          </div>
+        </div>
+
+        <!-- Paired grid: pick your teams, then see their scores -->
+        <div class="showcase-pair-head reveal">
+          <span class="eyebrow">Live sports</span>
+          <h3>Pick your teams, watch the scores roll in</h3>
+          <p>Choose your favorite teams across the NFL, NBA, MLB, and more — Paperboy remembers them and builds your own "My Teams" lineup.</p>
+        </div>
+        <div class="showcase-pair reveal">
+          <div class="pair-item">
+            <div class="showcase-media screen-card"><img src="assets/screenshot7.png" alt="Choosing favorite teams for live sports score cards" loading="lazy" data-full="assets/screenshot7.png"/></div>
+            <p class="pair-caption">Turn on the teams you follow, league by league.</p>
+          </div>
+          <div class="pair-item">
+            <div class="showcase-media screen-card"><img src="assets/screenshot6.png" alt="Live sports score cards for your favorite teams" loading="lazy" data-full="assets/screenshot6.png"/></div>
+            <p class="pair-caption">Every team gets its own row of live and upcoming score cards.</p>
+          </div>
+        </div>
+
+        <!-- Hero feature: podcasts -->
+        <div class="showcase-feature reveal">
+          <div class="showcase-text">
+            <span class="eyebrow">Podcasts</span>
+            <h3>Podcasts, built right in</h3>
+            <p>Discover and subscribe to shows, then keep listening with a persistent mini-player that tracks what's new and what you've already heard.</p>
+          </div>
+          <div class="showcase-media screen-card"><img src="assets/screenshot11.png" alt="Finding podcasts by category" loading="lazy" data-full="assets/screenshot11.png"/></div>
+        </div>
+
+        <!-- Paired grid: make Paperboy yours -->
+        <div class="showcase-pair-head reveal">
+          <span class="eyebrow">Make it yours</span>
+          <h3>Personalize sources, and keep your own notes</h3>
+          <p>Start curated, bring your own RSS feeds, and hold onto your own take on any story you read.</p>
+        </div>
+        <div class="showcase-pair reveal">
+          <div class="pair-item">
+            <div class="showcase-media screen-card"><img src="assets/screenshot2.png" alt="Choosing curated news sources" loading="lazy" data-full="assets/screenshot2.png"/></div>
+            <p class="pair-caption">Start with curated outlets like The Guardian, BBC, and NPR, or add any RSS feed.</p>
+          </div>
+          <div class="pair-item">
+            <div class="showcase-media screen-card"><img src="assets/screenshot14.png" alt="Writing a note on an article" loading="lazy" data-full="assets/screenshot14.png"/></div>
+            <p class="pair-caption">Jot a formatted note on any article — bold, lists, highlights, and more.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-screens reveal">
+        <p class="more-label">More screens</p>
+
+        <div class="carousel">
+          <button class="carousel-btn prev" type="button" aria-label="Scroll left">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+
+          <div class="carousel-track">
+            <div class="screen-card thumb"><img src="assets/screenshot1.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot1.png"/></div>
+            <div class="screen-card thumb"><img src="assets/screenshot3.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot3.png"/></div>
+            <div class="screen-card thumb"><img src="assets/screenshot4.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot4.png"/></div>
+            <div class="screen-card thumb"><img src="assets/screenshot5.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot5.png"/></div>
+            <div class="screen-card thumb"><img src="assets/screenshot8.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot8.png"/></div>
+            <div class="screen-card thumb"><img src="assets/screenshot10.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot10.png"/></div>
+            <div class="screen-card thumb"><img src="assets/screenshot13.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot13.png"/></div>
+            <div class="screen-card thumb"><img src="assets/screenshot12.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot12.png"/></div>
+          </div>
+
+          <button class="carousel-btn next" type="button" aria-label="Scroll right">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="carousel-dots" role="tablist" aria-label="Screenshot pages"></div>
       </div>
     </section>
-    </section>
 
-    <section id="download" class="download">
-      <h2>Download</h2>
-      <div class="grid download-grid" style="margin-top:12px">
-        <div class="card download-item">
+    <section id="download">
+      <div class="section-head reveal">
+        <span class="eyebrow">Download</span>
+        <h2>Get Paperboy</h2>
+        <p>Choose the install method that works best for you.</p>
+      </div>
+      <div class="download-grid">
+        <div class="download-item primary reveal">
+          <span class="download-badge">Recommended</span>
           <a href="https://github.com/thecalamityjoe87/paperboy/releases" target="_blank" aria-label="Download AppImage">
-            <img src="assets/appimage.png" alt="AppImage logo"/>
+            <div class="download-icon"><img src="assets/appimage.png" alt="AppImage logo"/></div>
             <div class="download-label">AppImage</div>
+            <p class="download-desc">Universal Linux package — download and run, no installation needed.</p>
+            <span class="download-cta">Download<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l5 5 5-5M8 1v13"/></svg></span>
           </a>
         </div>
-        
-          <!-- Debian package card (placed between AppImage and Compile) -->
-          <div class="card download-item">
-            <a href="https://github.com/thecalamityjoe87/paperboy/releases" target="_blank" aria-label="Download Debian package">
-              <img src="assets/debian.png" alt="Debian package"/>
-              <div class="download-label">Debian (.deb)</div>
-            </a>
-          </div>
-        <div class="card download-item">
+        <div class="download-item reveal">
+          <a href="https://launchpad.net/ubuntu/+source/paperboy" target="_blank" aria-label="View Debian package on Launchpad">
+            <div class="download-icon"><img src="assets/debian.png" alt="Debian package"/></div>
+            <div class="download-label">Debian (.deb)</div>
+            <p class="download-desc">Packaged for Ubuntu and hosted on Launchpad.</p>
+            <span class="download-cta">View on Launchpad<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg></span>
+          </a>
+        </div>
+        <div class="download-item reveal">
           <a href="https://github.com/thecalamityjoe87/paperboy?tab=readme-ov-file#building" target="_blank" aria-label="Build it">
-            <img src="assets/compile.png" alt="Build it yourself"/>
+            <div class="download-icon"><img src="assets/compile.png" alt="Build it yourself"/></div>
             <div class="download-label">Compile for yourself</div>
+            <p class="download-desc">Build from source with Meson, Ninja, and Vala.</p>
+            <span class="download-cta">View instructions<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg></span>
           </a>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <h2>Project Repository</h2>
-      <p>Project repository: <a href="https://github.com/thecalamityjoe87/paperboy" target="_blank">github.com/thecalamityjoe87/paperboy</a></p>
-      <p>Open issues or feature requests on the project's <a href="https://github.com/thecalamityjoe87/paperboy/issues" target="_blank">Issues</a> page.</p>
+      <div class="reveal">
+        <span class="eyebrow">Community</span>
+        <h2>Project Repository</h2>
+        <p>Project repository: <a href="https://github.com/thecalamityjoe87/paperboy" target="_blank">github.com/thecalamityjoe87/paperboy</a></p>
+        <p>Open issues or feature requests on the project's <a href="https://github.com/thecalamityjoe87/paperboy/issues" target="_blank">Issues</a> page.</p>
+      </div>
     </section>
   </main>
 
