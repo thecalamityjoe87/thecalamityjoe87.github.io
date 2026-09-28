@@ -37,7 +37,7 @@
       <span class="badge hero-in" style="--hero-delay:0s">🚧 Alpha — active development</span>
       <img class="hero-banner hero-in" style="--hero-delay:.1s" src="assets/banner.png" alt="Paperboy" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/thecalamityjoe87/paperboy/main/data/icons/paperboy-banner.png'" />
       <h1 class="sr-only">Paperboy</h1>
-      <p class="lead hero-in" style="--hero-delay:.2s">A beautiful native news reader for the Linux desktop, built with GTK4 and Libadwaita. Curated sources, custom feeds, live sports, podcasts, and local news — all in one clean, distraction-free app.</p>
+      <p class="lead hero-in" style="--hero-delay:.2s">A beautiful native news reader for the Linux desktop, built with GTK4 and Libadwaita. Curated sources, custom feeds, live sports with video highlights, podcasts, magazines, and local news with weather — all in one clean, distraction-free app.</p>
       <p class="actions hero-in" style="--hero-delay:.3s">
         <a class="btn primary" href="https://github.com/thecalamityjoe87/paperboy/releases" target="_blank">Download Paperboy</a>
         <a class="btn ghost" href="https://github.com/thecalamityjoe87/paperboy#readme" target="_blank">Read the README</a>
@@ -84,12 +84,22 @@
         <li class="feature-card reveal">
           <span class="ficon">🌍</span>
           <h3>Local news</h3>
-          <p>Uses your location, via GeoClue, to surface news for your area automatically.</p>
+          <p>Uses your location, via GeoClue, to surface news for your area — with current local weather right at the top.</p>
         </li>
         <li class="feature-card reveal">
           <span class="ficon">🏆</span>
           <h3>Live sports scores</h3>
-          <p>Track live and recent game scores from a dedicated sports view.</p>
+          <p>Track live and recent game scores from a dedicated sports view, and watch game highlights in-app.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">🎬</span>
+          <h3>Embedded video</h3>
+          <p>Play news clips and video stories right inside the app, without opening a browser.</p>
+        </li>
+        <li class="feature-card reveal">
+          <span class="ficon">📚</span>
+          <h3>Magazine rack</h3>
+          <p>Build a rack of digital magazines and flip through them in a built-in reader with single and two-page spreads.</p>
         </li>
         <li class="feature-card reveal">
           <span class="ficon">🎙️</span>
@@ -123,6 +133,26 @@
           <div class="showcase-media screen-card"><img src="assets/screenshot.png" alt="Paperboy front page feed" loading="lazy" data-full="assets/screenshot.png"/></div>
         </div>
 
+        <!-- My Feed: image left, text right -->
+        <div class="showcase-row reveal">
+          <div class="showcase-media screen-card"><img src="assets/screenshot21.png" alt="My Feed with featured stories, weather, and podcasts" loading="lazy" data-full="assets/screenshot21.png"/></div>
+          <div class="showcase-text">
+            <span class="eyebrow">My Feed</span>
+            <h3>Your news, your way</h3>
+            <p>Build a personal feed from just the sources and topics you care about, then add the extras you check every day — market and sports cards, your podcasts, your magazines, and the local weather.</p>
+          </div>
+        </div>
+
+        <!-- Local news: text left, image right -->
+        <div class="showcase-row reverse reveal">
+          <div class="showcase-media screen-card"><img src="assets/screenshot15.png" alt="Local New York news with current weather" loading="lazy" data-full="assets/screenshot15.png"/></div>
+          <div class="showcase-text">
+            <span class="eyebrow">Local news &amp; weather</span>
+            <h3>What's happening where you are</h3>
+            <p>Pick any city, or let Paperboy find you, for a front page of local stories — topped with the current conditions and today's high and low.</p>
+          </div>
+        </div>
+
         <!-- Single alternating row for a change of rhythm -->
         <div class="showcase-row reveal">
           <div class="showcase-media screen-card"><img src="assets/screenshot9.png" alt="In-app article reading with ad blocker" loading="lazy" data-full="assets/screenshot9.png"/></div>
@@ -131,6 +161,33 @@
             <h3>Read the story, not the ads</h3>
             <p>Open any article right inside Paperboy with a built-in ad blocker, so you get a fast, clean reading experience without ever leaving the app.</p>
           </div>
+        </div>
+
+        <!-- Paired grid: magazine rack, then the reader -->
+        <div class="showcase-pair-head reveal">
+          <span class="eyebrow">Magazine rack</span>
+          <h3>A newsstand on your desktop</h3>
+          <p>Add magazines to your rack, organize them how you like, and read them cover to cover without leaving Paperboy.</p>
+        </div>
+        <div class="showcase-pair reveal">
+          <div class="pair-item">
+            <div class="showcase-media screen-card"><img src="assets/screenshot16.png" alt="Magazine rack showing magazine covers" loading="lazy" data-full="assets/screenshot16.png"/></div>
+            <p class="pair-caption">Browse your collection at a glance, cover by cover.</p>
+          </div>
+          <div class="pair-item">
+            <div class="showcase-media screen-card"><img src="assets/screenshot17.png" alt="Reading a magazine as a two-page spread" loading="lazy" data-full="assets/screenshot17.png"/></div>
+            <p class="pair-caption">Flip through two-page spreads or single pages, with thumbnails and zoom.</p>
+          </div>
+        </div>
+
+        <!-- Hero feature: embedded video -->
+        <div class="showcase-feature reveal">
+          <div class="showcase-text">
+            <span class="eyebrow">Embedded video</span>
+            <h3>Watch the story, too</h3>
+            <p>Articles with video play right inside Paperboy, so you never have to leave the app.</p>
+          </div>
+          <div class="showcase-media screen-card"><img src="assets/screenshot19.png" alt="News video playing inside an article" loading="lazy" data-full="assets/screenshot19.png"/></div>
         </div>
 
         <!-- Paired grid: pick your teams, then see their scores -->
@@ -147,6 +204,16 @@
           <div class="pair-item">
             <div class="showcase-media screen-card"><img src="assets/screenshot6.png" alt="Live sports score cards for your favorite teams" loading="lazy" data-full="assets/screenshot6.png"/></div>
             <p class="pair-caption">Every team gets its own row of live and upcoming score cards.</p>
+          </div>
+        </div>
+
+        <!-- Sports highlights: text left, image right -->
+        <div class="showcase-row reverse reveal">
+          <div class="showcase-media screen-card"><img src="assets/screenshot18.png" alt="Sports video highlight playing in Paperboy" loading="lazy" data-full="assets/screenshot18.png"/></div>
+          <div class="showcase-text">
+            <span class="eyebrow">Highlights</span>
+            <h3>Missed the game? Catch the highlights</h3>
+            <p>Watch highlights from the leagues and teams you follow.</p>
           </div>
         </div>
 
@@ -187,6 +254,7 @@
           </button>
 
           <div class="carousel-track">
+            <div class="screen-card thumb"><img src="assets/screenshot20.png" alt="Reading history" loading="lazy" data-full="assets/screenshot20.png"/></div>
             <div class="screen-card thumb"><img src="assets/screenshot1.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot1.png"/></div>
             <div class="screen-card thumb"><img src="assets/screenshot3.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot3.png"/></div>
             <div class="screen-card thumb"><img src="assets/screenshot4.png" alt="Paperboy screenshot" loading="lazy" data-full="assets/screenshot4.png"/></div>
