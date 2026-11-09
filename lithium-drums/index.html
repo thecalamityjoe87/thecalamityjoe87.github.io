@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Lithium Drums: a free, open-source acoustic drum sampler with real multi-mic recordings, 21 sound presets, a mixer and effects, and 1,150 grooves played by human drummers. VST3, CLAP, AU and standalone for Linux, Windows and macOS.">
+  <meta name="theme-color" content="#0e1318">
+  <meta property="og:title" content="Lithium Drums">
+  <meta property="og:description" content="A free, open-source acoustic drum sampler. Real multi-mic recordings of real kits, a mixer and effects to shape them, and 1,150 grooves played by human drummers.">
+  <meta property="og:image" content="https://thecalamityjoe87.github.io/lithium-drums/assets/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Lithium Drums</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icon-64.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#home" aria-label="Lithium Drums, back to top">
+        <img src="assets/icon.png" alt="" width="34" height="34">
+        <b>Lithium</b><span>Drums</span>
+      </a>
+      <nav class="top-nav" aria-label="Main">
+        <div class="nav-tabs">
+          <a href="#video">Video</a>
+          <a href="#features">Features</a>
+          <a href="#presets">Presets</a>
+          <a href="#tour">Tour</a>
+          <a href="#kits">Kits</a>
+          <a href="#download">Download</a>
+        </div>
+        <a class="icon-link" href="https://github.com/thecalamityjoe87/LithiumDrums" target="_blank" rel="noopener" aria-label="GitHub repository">
+          <svg viewBox="0 0 16 16" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content" id="home">
+    <section class="hero">
+      <span class="badge hero-in" style="--hero-delay:0s"><span class="dot" aria-hidden="true"></span><span class="mono">v0.9.4</span> Early software</span>
+      <h1 class="hero-in" style="--hero-delay:.08s"><span>Real drums.</span> <em>Your e-kit.</em> <span>Free and open source.</span></h1>
+      <p class="lead hero-in" style="--hero-delay:.16s"><strong>A free, open-source acoustic drum sampler.</strong> Real multi-mic recordings of real kits, sound presets ready for a song, a mixer and effects to shape them, and 1,150 grooves played by human drummers, in your DAW or on its own.</p>
+
+      <div class="readout hero-in" style="--hero-delay:.24s" role="list" aria-label="At a glance">
+        <div class="readout-cell" role="listitem"><span class="readout-label">Kits</span><span class="readout-value">16</span></div>
+        <div class="readout-cell" role="listitem"><span class="readout-label">Sound presets</span><span class="readout-value">21</span></div>
+        <div class="readout-cell wide" role="listitem"><span class="readout-label">Kit presets</span><span class="readout-value">18</span></div>
+        <div class="readout-cell" role="listitem"><span class="readout-label">Grooves</span><span class="readout-value">1,150</span></div>
+        <div class="readout-cell on" role="listitem"><span class="readout-label">Price</span><span class="readout-value">Free</span></div>
+      </div>
+
+      <p class="actions hero-in" style="--hero-delay:.32s">
+        <a class="btn primary" href="#download">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l5 5 5-5M8 1v13"/></svg>
+          Download
+        </a>
+        <a class="btn ghost" href="#video">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg>
+          Watch the tour
+        </a>
+      </p>
+      <p class="platforms hero-in" style="--hero-delay:.36s">VST3, CLAP, AU and a standalone app · Linux, Windows and macOS · GNU AGPLv3</p>
+
+      <div class="hero-shot shot screen-card hero-in" style="--hero-delay:.44s">
+        <img src="assets/kit.webp" width="1920" height="1200" alt="The Kit page: a drum kit on stage in a studio room, with the selected piece and the groove player in the corners" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="section-head reveal">
+        <span class="eyebrow">Feature tour</span>
+        <h2>See it, and hear it</h2>
+        <p>A walk through every page: the stage, the kit browser, building your own kit from pieces of others, then shaping, mixing and playing grooves through it.</p>
+      </div>
+      <div class="video reveal" id="video-player">
+        <button class="video-facade" type="button" data-video="Q6swGBu9GUY" aria-label="Play the Lithium Drums feature tour video">
+          <img src="assets/video-poster.webp" width="1280" height="720" alt="" loading="lazy">
+          <span class="video-play" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l9-5.5z"/></svg></span>
+        </button>
+      </div>
+      <p class="video-note reveal">Or <a href="https://www.youtube.com/watch?v=Q6swGBu9GUY" target="_blank" rel="noopener">watch it on YouTube</a>.</p>
+    </section>
+
+    <section id="features">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>From the first hit to the final mix</h2>
+        <p>Everything between hitting a pad and hearing a finished drum sound, and every bit of it is yours to change.</p>
+      </div>
+      <div class="path-wrap" id="feature-path">
+      <span class="path-cable" aria-hidden="true"><span class="path-fill"></span><span class="path-hit"></span></span>
+      <ol class="path">
+        <li class="stage" style="--tc:var(--g-hats)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">00</span>Input</span>
+            <h3>You play it</h3>
+            <p>From an e-kit, a keyboard, your DAW, or one of 1,150 grooves played by real drummers. Every kit answers to the same MIDI map, so switching kits never changes what your notes play.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>MIDI in</div>
+            <div class="mod-figure"><span class="mod-value">1,150</span><span class="mod-label">recorded grooves</span></div>
+            <ul class="mod-tags"><li>E-kit</li><li>Keyboard</li><li>DAW</li><li>Grooves</li></ul>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--g-snare)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">01</span>Sample</span>
+            <h3>A real drum answers</h3>
+            <p>Recorded at many velocities with several takes of each, so no two hits sound quite the same. Big kits stream from disk: DRSKit plays in about 360&nbsp;MB of RAM instead of 3&nbsp;GB.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>Snare · DRSKit</div>
+            <div class="mod-figure"><span class="mod-value">16</span><span class="mod-label">kits from 11 free libraries</span></div>
+            <ul class="mod-tags"><li>Velocity layers</li><li>Several takes</li><li>Disk streaming</li></ul>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--g-toms)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">02</span>Slot</span>
+            <h3>From any kit you like</h3>
+            <p>Every kit is the same grid of 24 slots. Swap in a snare from another kit, and “Ambience follows piece” brings its own overheads and room along with it.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>Slots</div>
+            <div class="mod-figure"><span class="mod-value">24</span><span class="mod-label">slots per kit</span></div>
+            <ul class="mod-tags"><li>Swap piece</li><li>Extra toms</li><li>Percussion</li><li>Ambience follows</li></ul>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--fx-room)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">03</span>Mics</span>
+            <h3>Heard by every mic</h3>
+            <p>The close mic, the overheads and the room all hear it, and you set how much of each. A kit recorded without overheads or a room mic can have them emulated from its other mics.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>Snare · Mics</div>
+            <div class="mod-faders">
+              <div class="fader" style="--lvl:.82"><span class="fader-track"><span class="fader-fill"></span></span><span class="fader-name">Close</span></div>
+              <div class="fader" style="--lvl:.58"><span class="fader-track"><span class="fader-fill"></span></span><span class="fader-name">OH</span></div>
+              <div class="fader" style="--lvl:.4"><span class="fader-track"><span class="fader-fill"></span></span><span class="fader-name">Room</span></div>
+            </div>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--g-kick)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">04</span>Shape</span>
+            <h3>Shaped on its own</h3>
+            <p>One drum at a time: how it responds to velocity, its tuning and a pitch bend on each hit, a tone filter, its envelope, and its own dynamics.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>Snare · Edit</div>
+            <ul class="mod-tags"><li>Velocity</li><li>Tune</li><li>Pitch bend</li><li>Tone</li><li>Attack</li><li>Hold</li><li>Decay</li><li>Transient</li><li>Saturation</li><li>Compressor</li></ul>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--g-cymbals)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">05</span>Channel</span>
+            <h3>Mixed like a session</h3>
+            <p>Every drum gets its own channel, next to the overheads, the room, three effect returns and the master. Its EQ is drawn over a live spectrum of what it's playing.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>Mixer · Snare</div>
+            <ul class="mod-tags"><li>EQ + spectrum</li><li>Pan</li><li>Width</li><li>Sends</li></ul>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--g-toms)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">06</span>Returns</span>
+            <h3>Sent into a room</h3>
+            <p>Three returns every channel can send to: a convolution room with five spaces (one of them a real, measured seminar room), an algorithmic plate, and a delay that follows your tempo.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>FX · Returns</div>
+            <ul class="mod-tags">
+              <li style="--tc:var(--fx-room)">Room · 5 spaces</li>
+              <li style="--tc:var(--g-toms)">Plate</li>
+              <li style="--tc:var(--fx-delay)">Delay · tempo sync</li>
+            </ul>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--g-kick)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">07</span>Master</span>
+            <h3>Glued on the bus</h3>
+            <p>The whole kit runs through EQ, glue and crush compressors, tape saturation, a transient shaper and a limiter.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>FX · Master</div>
+            <ul class="mod-tags"><li>EQ</li><li>Glue</li><li>Crush</li><li>Tape</li><li>Shaper</li><li>Limiter</li></ul>
+          </div>
+        </li>
+        <li class="stage" style="--tc:var(--accent)">
+          <span class="stage-node" aria-hidden="true"></span>
+          <div class="stage-body">
+            <span class="stage-kicker"><span class="mono">08</span>Out</span>
+            <h3>Into your song</h3>
+            <p>As one stereo mix, or across sixteen stereo aux outs so each drum gets a track of its own. It adds no latency unless you switch on the limiter's 2&nbsp;ms lookahead.</p>
+          </div>
+          <div class="module" aria-hidden="true">
+            <div class="mod-head"><span class="mod-led"></span>Output</div>
+            <div class="mod-figures">
+              <div class="mod-figure"><span class="mod-value">16</span><span class="mod-label">stereo aux outs</span></div>
+              <div class="mod-figure"><span class="mod-value">0 ms</span><span class="mod-label">added latency</span></div>
+            </div>
+          </div>
+        </li>
+      </ol>
+      </div>
+      <p class="path-foot reveal">Don't want to set all of that yourself? <a href="#presets">A sound preset sets all of it in one click.</a></p>
+    </section>
+
+    <section id="presets">
+      <div class="section-head reveal">
+        <span class="eyebrow">Sound presets</span>
+        <h2>Twenty-one finished sounds</h2>
+        <p>Each sound preset is a whole drum sound, ready for a song: a kit with its drums tuned and shaped, every channel EQ'd and compressed, the mics balanced and the effects and master bus set. Pick one and play, or start from it and make it yours.</p>
+      </div>
+      <div class="preset-filter reveal" role="group" aria-label="Filter presets by style">
+        <button type="button" class="chip-btn active" data-filter="all" aria-pressed="true">All <span class="mono">21</span></button>
+        <button type="button" class="chip-btn" data-filter="Rock" aria-pressed="false">Rock <span class="mono">3</span></button>
+        <button type="button" class="chip-btn" data-filter="Metal" aria-pressed="false">Metal <span class="mono">2</span></button>
+        <button type="button" class="chip-btn" data-filter="Studio" aria-pressed="false">Studio <span class="mono">2</span></button>
+        <button type="button" class="chip-btn" data-filter="Pop" aria-pressed="false">Pop <span class="mono">2</span></button>
+        <button type="button" class="chip-btn" data-filter="Funk" aria-pressed="false">Funk <span class="mono">2</span></button>
+        <button type="button" class="chip-btn" data-filter="Jazz" aria-pressed="false">Jazz <span class="mono">2</span></button>
+        <button type="button" class="chip-btn" data-filter="Vintage" aria-pressed="false">Vintage <span class="mono">1</span></button>
+        <button type="button" class="chip-btn" data-filter="80s" aria-pressed="false">80s <span class="mono">1</span></button>
+        <button type="button" class="chip-btn" data-filter="Lo-Fi" aria-pressed="false">Lo-Fi <span class="mono">1</span></button>
+        <button type="button" class="chip-btn" data-filter="Acoustic" aria-pressed="false">Acoustic <span class="mono">2</span></button>
+        <button type="button" class="chip-btn" data-filter="Indie" aria-pressed="false">Indie <span class="mono">1</span></button>
+        <button type="button" class="chip-btn" data-filter="Blues" aria-pressed="false">Blues <span class="mono">1</span></button>
+        <button type="button" class="chip-btn" data-filter="Americana" aria-pressed="false">Americana <span class="mono">1</span></button>
+      </div>
+      <ul class="preset-grid reveal" id="preset-grid">
+          <li class="preset-card" data-group="Rock" style="--tc:var(--g-kick)">
+            <span class="preset-style">Rock</span>
+            <h3>Arena Thunder</h3>
+            <p>Stadium rock: a punchy kick, a fat snare in a plate, long low toms and crushed room mics, glued and taped.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Rock" style="--tc:var(--g-kick)">
+            <span class="preset-style">Rock</span>
+            <h3>Garage Riot</h3>
+            <p>Raw and trashy: everything a little driven, loud overheads, a snare that cracks, a concrete garage around it and a smashed bus underneath.</p>
+            <span class="preset-kit">Big Rusty Drums</span>
+          </li>
+          <li class="preset-card" data-group="Rock" style="--tc:var(--g-kick)">
+            <span class="preset-style">Rock</span>
+            <h3>Stone Hall</h3>
+            <p>Seventies hard rock in a big hall: the open kick tuned down and tightened, maple toms tuned down and left to ring, a cracking snare, all on hot tape.</p>
+            <span class="preset-kit">Tchimera Drum Kit</span>
+          </li>
+          <li class="preset-card" data-group="Metal" style="--tc:var(--g-kick)">
+            <span class="preset-style">Metal</span>
+            <h3>Black Anvil</h3>
+            <p>Tight double-kick metal: short kicks with all attack and no boom, a bright snare, cymbals kept out of the way.</p>
+            <span class="preset-kit">MuldjordKit</span>
+          </li>
+          <li class="preset-card" data-group="Metal" style="--tc:var(--g-kick)">
+            <span class="preset-style">Metal</span>
+            <h3>Forge Hammer</h3>
+            <p>Modern metal: a clicky, short kick that cuts through guitars, a tight cracking snare, gated toms and the far rooms pulled out.</p>
+            <span class="preset-kit">Naked Drums</span>
+          </li>
+          <li class="preset-card" data-group="Studio" style="--tc:var(--g-snare)">
+            <span class="preset-style">Studio</span>
+            <h3>Glass Booth</h3>
+            <p>Clean modern studio: every drum clear and even, a small treated room, a touch of plate on the snare.</p>
+            <span class="preset-kit">MuldjordKit</span>
+          </li>
+          <li class="preset-card" data-group="Studio" style="--tc:var(--g-snare)">
+            <span class="preset-style">Studio</span>
+            <h3>Session Gold</h3>
+            <p>A polished, record-ready kit: a round kick, a snare with snap and body in a plate, controlled rooms and a gentle glue.</p>
+            <span class="preset-kit">DRSKit</span>
+          </li>
+          <li class="preset-card" data-group="Pop" style="--tc:var(--g-toms)">
+            <span class="preset-style">Pop</span>
+            <h3>Radio Shine</h3>
+            <p>Pop-rock ready for the radio: a scooped, punchy kick, a bright snare in a short plate and a polished, glued bus.</p>
+            <span class="preset-kit">SM Drums</span>
+          </li>
+          <li class="preset-card" data-group="Pop" style="--tc:var(--g-toms)">
+            <span class="preset-style">Pop</span>
+            <h3>Sugar Rush</h3>
+            <p>Bright, tight pop: a deep kick with a click, a tuned-up snare in a big plate with a dotted-eighth echo, sparkly hats.</p>
+            <span class="preset-kit">Basalt Kits</span>
+          </li>
+          <li class="preset-card" data-group="Funk" style="--tc:var(--g-cymbals)">
+            <span class="preset-style">Funk</span>
+            <h3>Motor City</h3>
+            <p>Sixties soul: a short, damped kick, a tight snare tuned up with every ghost note heard, crisp hats and a small studio room, saturated on tape.</p>
+            <span class="preset-kit">Tchimera Drum Kit</span>
+          </li>
+          <li class="preset-card" data-group="Funk" style="--tc:var(--g-cymbals)">
+            <span class="preset-style">Funk</span>
+            <h3>Velvet Pocket</h3>
+            <p>Dry and in the pocket: a short, dead kick, a cracking tuned-up snare, crisp hats and a small room, on tape.</p>
+            <span class="preset-kit">Basalt Kits</span>
+          </li>
+          <li class="preset-card" data-group="Jazz" style="--tc:var(--fx-room)">
+            <span class="preset-style">Jazz</span>
+            <h3>Late Set</h3>
+            <p>Sticks on a bop kit at the end of the night: small tuned-up drums, the ride up front and the vintage room mic warming it all.</p>
+            <span class="preset-kit">Virtuosity Drums</span>
+          </li>
+          <li class="preset-card" data-group="Jazz" style="--tc:var(--fx-room)">
+            <span class="preset-style">Jazz</span>
+            <h3>Smoke &amp; Brushes</h3>
+            <p>Brushes in a small club: a high, open kick, wide dynamics, a warm room and nothing squashed.</p>
+            <span class="preset-kit">DRSKit</span>
+          </li>
+          <li class="preset-card" data-group="Vintage" style="--tc:var(--g-cymbals)">
+            <span class="preset-style">Vintage</span>
+            <h3>Shag Carpet</h3>
+            <p>The seventies, towels on every drum: dead, thuddy toms tuned low, a fat dark snare, no room at all, through a warm tape machine.</p>
+            <span class="preset-kit">DRSKit</span>
+          </li>
+          <li class="preset-card" data-group="80s" style="--tc:var(--g-toms)">
+            <span class="preset-style">80s</span>
+            <h3>Neon Gate</h3>
+            <p>The eighties power ballad: a huge, short hall on the snare and toms, toms that drop in pitch, tight dry cymbals.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Lo-Fi" style="--tc:var(--fx-delay)">
+            <span class="preset-style">Lo-Fi</span>
+            <h3>Dusty Crates</h3>
+            <p>A beat sampled off an old record: dull, short and a little detuned, saturated tape and a crushed bus.</p>
+            <span class="preset-kit">Salamander Drumkit</span>
+          </li>
+          <li class="preset-card" data-group="Acoustic" style="--tc:var(--g-hats)">
+            <span class="preset-style">Acoustic</span>
+            <h3>Campfire Circle</h3>
+            <p>Unplugged percussion: a cajon with a round low end, congas and shakers in a small warm room.</p>
+            <span class="preset-kit">Basalt Kits</span>
+          </li>
+          <li class="preset-card" data-group="Acoustic" style="--tc:var(--g-hats)">
+            <span class="preset-style">Acoustic</span>
+            <h3>Porch Light</h3>
+            <p>Rods for a quiet song: soft and warm, in a natural room, with the dynamics left alone.</p>
+            <span class="preset-kit">Basalt Kits</span>
+          </li>
+          <li class="preset-card" data-group="Indie" style="--tc:var(--fx-delay)">
+            <span class="preset-style">Indie</span>
+            <h3>Thrift Store</h3>
+            <p>A bedroom-indie kit off a four-track: slightly dull and driven, in a small reflective room.</p>
+            <span class="preset-kit">The Open Source Drum Kit</span>
+          </li>
+          <li class="preset-card" data-group="Blues" style="--tc:var(--fx-room)">
+            <span class="preset-style">Blues</span>
+            <h3>Juke Joint</h3>
+            <p>A blues band in a small bar: warm and a little dark, the ride up front, the crashes pulled back and a natural room glued together gently.</p>
+            <span class="preset-kit">Tchimera Drum Kit</span>
+          </li>
+          <li class="preset-card" data-group="Americana" style="--tc:var(--g-hats)">
+            <span class="preset-style">Americana</span>
+            <h3>Dirt Road</h3>
+            <p>Country and Americana, close and dry: a round kick, short toms, a snare with a natural plate on it and the cymbals kept polite.</p>
+            <span class="preset-kit">Tchimera Drum Kit</span>
+          </li>
+      </ul>
+      <div class="preset-how reveal">
+        <div class="preset-how-item">
+          <h3>Step through them</h3>
+          <p>The preset menu sits in the middle of the header. The arrows either side step through every preset, so you can audition them while a groove plays.</p>
+        </div>
+        <div class="preset-how-item">
+          <h3>Save your own</h3>
+          <p>Change anything and an asterisk shows the sound has changed. Save as... keeps it as a <span class="mono">.lithiumpreset</span> file next to your kits.</p>
+        </div>
+        <div class="preset-how-item">
+          <h3>Kit not installed?</h3>
+          <p>A preset whose kit you haven't downloaded yet is greyed out in the menu, with the kit it needs and a link to its download.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tour</span>
+        <h2>Every page, up close</h2>
+        <p>Click any screenshot to see it full size.</p>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase-row reveal" style="--tc:var(--g-toms)">
+          <div class="showcase-media shot screen-card"><img src="assets/slots.webp" width="1920" height="1200" alt="The Slots view: a grid of 24 piece slots, each with a picture of the drum, its level and its source kit" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">01</span>Slots</span>
+            <h3>Build your own kit</h3>
+            <p>Switch the Kit page to Slots and every kit becomes the same grid of 24 slots. Swap any piece for the same kind of piece from any kit you have installed.</p>
+            <ul>
+              <li>Fill empty slots with extra toms, cymbals or percussion</li>
+              <li>"Ambience follows piece" brings its own overheads and room along</li>
+              <li>Save the result as your own preset</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="showcase-row reverse reveal" style="--tc:var(--g-kick)">
+          <div class="showcase-media shot screen-card"><img src="assets/edit.webp" width="1920" height="1200" alt="The Edit page: velocity, pitch, tone and envelope controls for the snare, its mics on a picture of the drum, and its compressor" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">02</span>Edit</span>
+            <h3>Shape every drum</h3>
+            <p>The Edit page works on one drum at a time: how it responds to velocity, its tuning, a tone filter, its attack, hold and decay, and its dynamics.</p>
+            <p>Its mics are drawn around a picture of the drum, so you set how much the close mic, overheads and room each hear it.</p>
+          </div>
+        </div>
+
+        <div class="showcase-row reveal" style="--tc:var(--fx-room)">
+          <div class="showcase-media shot screen-card"><img src="assets/mixer.webp" width="1920" height="1200" alt="The Mixer page: the selected channel's EQ with a live spectrum, its pan, width and sends, and a row of channel strips below" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">03</span>Mixer</span>
+            <h3>Mix it</h3>
+            <p>Every drum gets its own channel, plus the overhead and room mics, three effect returns and the master.</p>
+            <ul>
+              <li>EQ drawn over a live spectrum of the channel</li>
+              <li>Pan, stereo width and sends on every channel</li>
+              <li>Sixteen stereo aux outs to give any drum its own DAW track</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="showcase-row reverse reveal" style="--tc:var(--g-toms)">
+          <div class="showcase-media shot screen-card"><img src="assets/fx.webp" width="1920" height="1200" alt="The FX page: Room, Plate and Delay returns on top, the master bus chain below, and the master EQ in detail" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">04</span>FX</span>
+            <h3>Add effects</h3>
+            <p>Three returns every channel can send to, and a full chain on the master bus.</p>
+            <ul>
+              <li>Room: convolution, with a studio, a measured seminar room, a tiled room, a hall and a plate</li>
+              <li>Plate: an algorithmic reverb</li>
+              <li>Delay: synced to your project's tempo</li>
+              <li>Master: EQ, glue and crush compressors, tape, transient shaper and limiter</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="showcase-row reveal" style="--tc:var(--g-hats)">
+          <div class="showcase-media shot screen-card"><img src="assets/grooves.webp" width="1920" height="1200" alt="The Grooves page: style chips, a list of grooves, phrase and fill tiles with their hits drawn in, and the full MIDI of the selected bars" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">05</span>Grooves</span>
+            <h3>Play grooves</h3>
+            <p>1,150 recorded performances by real drummers, in styles from rock and funk to Latin, jazz and Afro-Cuban, cut into phrases and fills.</p>
+            <p>Click a tile to hear it on the loaded kit, in time with your project, then drag it onto a track to get its MIDI.</p>
+          </div>
+        </div>
+
+        <div class="showcase-row reverse reveal" style="--tc:var(--g-snare)">
+          <div class="showcase-media shot screen-card"><img src="assets/midi.webp" width="1920" height="1200" alt="The MIDI panel: the input monitor, the velocity curve, the list of articulations with their notes, and a keyboard showing what each note plays" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">06</span>MIDI</span>
+            <h3>One map for every kit</h3>
+            <p>Every kit plays from the same MIDI map, so switching kits never changes what your notes play.</p>
+            <ul>
+              <li>See what every note plays, and learn any articulation from a pad or key</li>
+              <li>Velocity curves for the whole kit, each drum and each hit</li>
+              <li>Each library's own map, General MIDI and e-kit maps too</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="showcase-row reveal" style="--tc:var(--g-cymbals)">
+          <div class="showcase-media shot screen-card"><img src="assets/edrums.webp" width="1920" height="1200" alt="The E-Drums view: hi-hat pedal setup with its openness zones, positional sensing for snare, ride and toms, and a live MIDI monitor" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">07</span>E-Drums</span>
+            <h3>Play it from an e-kit</h3>
+            <p>The hi-hat follows the pedal continuously, with chicks and foot splashes, and snare, ride and tom hits follow positional sensing.</p>
+            <p>The E-Drums view calibrates the pedal and pads, with a monitor of the MIDI coming in. Maps for Roland V-Drums and Alesis kits are built in.</p>
+          </div>
+        </div>
+
+        <div class="showcase-row reverse reveal" style="--tc:var(--g-cymbals)">
+          <div class="showcase-media shot screen-card"><img src="assets/browse.webp" width="1920" height="1200" alt="The kit browser: content packs on the left, kit and kit preset cards in the middle, and the selected kit's details and credits on the right" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">08</span>Browse</span>
+            <h3>Find and download kits</h3>
+            <p>The kit browser shows every kit and kit preset, searchable by name, style or tag, with each one's credits.</p>
+            <p>Libraries you haven't downloaded yet are there too, greyed out, with a Download button.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kits">
+      <div class="section-head reveal">
+        <span class="eyebrow">The kits</span>
+        <h2>The best drums open source has to offer</h2>
+        <p>Eleven of the finest free drum libraries ever recorded, from deep, multi-mic'd metal kits to jazz brushes, all playable in one place. Pick the ones that suit your music and download just those.</p>
+      </div>
+
+      <div class="kits reveal" role="table" aria-label="Drum libraries Lithium Drums can download">
+        <div class="kit-row head" role="row">
+          <span role="columnheader">Library · its presets' styles</span>
+          <span class="kit-size" role="columnheader">Download</span>
+          <span role="columnheader">Licence</span>
+        </div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">DRSKit 2.1<small>DrumGizmo</small><span class="kit-styles"><span>Studio</span><span>Jazz</span><span>Vintage</span></span></span><span class="kit-size" role="cell">2.8 GB</span><span class="kit-licence" role="cell"><span class="chip">CC BY 4.0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">MuldjordKit 3<small>DrumGizmo</small><span class="kit-styles"><span>Metal</span><span>Studio</span></span></span><span class="kit-size" role="cell">2.5 GB</span><span class="kit-licence" role="cell"><span class="chip">CC BY 4.0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">CrocellKit 1.1<small>DrumGizmo · metal and rock</small><span class="kit-styles"><span>Rock</span><span>80s</span></span></span><span class="kit-size" role="cell">5.6 GB</span><span class="kit-licence" role="cell"><span class="chip">CC BY 4.0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">Naked Drums<small>Wilkinson Audio · metal and hard rock</small><span class="kit-styles"><span>Metal</span></span></span><span class="kit-size" role="cell">2.5 GB</span><span class="kit-licence" role="cell"><span class="chip">CC BY 4.0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">Virtuosity Drums 0.925<span class="kit-styles"><span>Jazz</span></span></span><span class="kit-size" role="cell">1.2 GB</span><span class="kit-licence" role="cell"><span class="chip">CC0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">Big Rusty Drums 1.100<small>Karoryfer</small><span class="kit-styles"><span>Rock</span></span></span><span class="kit-size" role="cell">620 MB</span><span class="kit-licence" role="cell"><span class="chip">CC0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">SM Drums 1.2<span class="kit-styles"><span>Pop</span></span></span><span class="kit-size" role="cell">2.4 GB</span><span class="kit-licence" role="cell">Free to use in your productions</span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">The Open Source Drum Kit<small>Real Music Media · with a gong</small><span class="kit-styles"><span>Indie</span></span></span><span class="kit-size" role="cell">530 MB</span><span class="kit-licence" role="cell"><span class="chip">Public domain</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">AVL Drumkits<small>as the Basalt Kits</small><span class="kit-styles"><span>Pop</span><span>Funk</span><span>Acoustic</span></span></span><span class="kit-size" role="cell">90 MB</span><span class="kit-licence" role="cell"><span class="chip">CC BY-SA 3.0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">Salamander Drumkit<span class="kit-styles"><span>Lo-Fi</span></span></span><span class="kit-size" role="cell">360 MB</span><span class="kit-licence" role="cell"><span class="chip">CC BY-SA 3.0</span></span></div>
+        <div class="kit-row" role="row"><span class="kit-name" role="cell">Tchimera Drum Kit<small>Tchackpoum's Ludwig Black Cortex recordings, made for e-kits</small><span class="kit-styles"><span>Rock</span><span>Funk</span><span>Blues</span><span>Americana</span></span></span><span class="kit-size" role="cell">800 MB</span><span class="kit-licence" role="cell"><span class="chip">CC BY-SA 4.0</span> music made with it: CC0</span></div>
+      </div>
+
+      <div class="kits-notes">
+        <div class="kits-note reveal">
+          <h3>Only what you play</h3>
+          <p>Each library is its own one-click download in the kit browser, ready to play when it finishes. Make metal? Grab Naked Drums and CrocellKit and skip the brushes.</p>
+        </div>
+        <div class="kits-note reveal">
+          <h3>Already have one?</h3>
+          <p><code>LithiumImport &lt;folder&gt;</code> converts a library you downloaded yourself. On the same drive the audio is hard-linked, so it takes no extra space.</p>
+        </div>
+        <div class="kits-note reveal">
+          <h3>Credit the authors</h3>
+          <p>The kits' authors ask to be credited when you publish music made with them. The About dialog lists the credits of every installed pack.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="grooves">
+      <div class="section-head reveal">
+        <span class="eyebrow">The grooves</span>
+        <h2>1,150 grooves from Google Magenta</h2>
+        <p>The grooves are the <a href="https://magenta.withgoogle.com/datasets/groove" target="_blank" rel="noopener">Groove MIDI Dataset</a> from Google's Magenta project: real performances by real drummers, played through whichever kit you have loaded.</p>
+      </div>
+
+      <div class="groove-panel reveal">
+        <div class="groove-text">
+          <h3>Played by professionals, on an e-kit</h3>
+          <p>Magenta hired drummers, most of them professionals, and had them improvise to a click in a wide range of styles on a <span class="nowrap">Roland TD-11</span> electronic kit. So every hit carries a real drummer's timing and dynamics, ghost notes and all.</p>
+          <p>Lithium Drums cuts each performance into phrases and fills. Click one to hear it in time with your project, then drag it onto a track to get its MIDI, written in whichever MIDI map you use.</p>
+          <div class="groove-facts">
+            <div><span class="readout-value">1,150</span><span class="readout-label">Performances</span></div>
+            <div><span class="readout-value">13.6 h</span><span class="readout-label">Of drumming</span></div>
+            <div><span class="readout-value">22,000+</span><span class="readout-label">Bars</span></div>
+            <div><span class="readout-value">10</span><span class="readout-label">Drummers</span></div>
+          </div>
+        </div>
+        <div class="groove-side">
+          <div class="groove-tile">
+            <div class="mod-head"><span class="mod-led" style="--tc:var(--g-hats)"></span>Phrase · Bars 1-2<span class="gt-bpm mono">100 BPM</span></div>
+            <svg class="groove-svg" viewBox="0 0 640 150" aria-hidden="true"><line x1="344.0" y1="10" x2="344.0" y2="142" class="gt-bar"/><line x1="129.5" y1="14" x2="129.5" y2="138" class="gt-beat"/><line x1="201.0" y1="14" x2="201.0" y2="138" class="gt-beat"/><line x1="272.5" y1="14" x2="272.5" y2="138" class="gt-beat"/><line x1="415.5" y1="14" x2="415.5" y2="138" class="gt-beat"/><line x1="487.0" y1="14" x2="487.0" y2="138" class="gt-beat"/><line x1="558.5" y1="14" x2="558.5" y2="138" class="gt-beat"/><text x="8" y="34" class="gt-label">HH</text><line x1="58" y1="30" x2="630" y2="30" class="gt-lane"/><rect x="63.9" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="81.8" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="99.7" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="117.6" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="135.4" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="153.3" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="171.2" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="189.1" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="206.9" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="224.8" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="242.7" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="260.6" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="278.4" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="296.3" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="314.2" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="332.1" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="349.9" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="367.8" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="385.7" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="403.6" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="421.4" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="439.3" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="457.2" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="475.1" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="492.9" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="510.8" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="528.7" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="546.6" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="564.4" y="16.9" width="6" height="26.2" rx="2" fill="var(--g-hats)" opacity="0.94"/><rect x="582.3" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><rect x="600.2" y="20.1" width="6" height="19.9" rx="2" fill="var(--g-hats)" opacity="0.71"/><rect x="618.1" y="22.3" width="6" height="15.4" rx="2" fill="var(--g-hats)" opacity="0.54"/><text x="8" y="79" class="gt-label">SN</text><line x1="58" y1="75" x2="630" y2="75" class="gt-lane"/><rect x="135.4" y="61.0" width="6" height="28.0" rx="2" fill="var(--g-snare)" opacity="1.00"/><rect x="189.1" y="67.3" width="6" height="15.4" rx="2" fill="var(--g-snare)" opacity="0.54"/><rect x="242.7" y="67.8" width="6" height="14.5" rx="2" fill="var(--g-snare)" opacity="0.51"/><rect x="278.4" y="61.0" width="6" height="28.0" rx="2" fill="var(--g-snare)" opacity="1.00"/><rect x="332.1" y="67.3" width="6" height="15.4" rx="2" fill="var(--g-snare)" opacity="0.54"/><rect x="421.4" y="61.0" width="6" height="28.0" rx="2" fill="var(--g-snare)" opacity="1.00"/><rect x="475.1" y="67.3" width="6" height="15.4" rx="2" fill="var(--g-snare)" opacity="0.54"/><rect x="528.7" y="67.8" width="6" height="14.5" rx="2" fill="var(--g-snare)" opacity="0.51"/><rect x="564.4" y="61.0" width="6" height="28.0" rx="2" fill="var(--g-snare)" opacity="1.00"/><rect x="600.2" y="65.0" width="6" height="19.9" rx="2" fill="var(--g-snare)" opacity="0.71"/><rect x="618.1" y="63.7" width="6" height="22.6" rx="2" fill="var(--g-snare)" opacity="0.80"/><text x="8" y="124" class="gt-label">KD</text><line x1="58" y1="120" x2="630" y2="120" class="gt-lane"/><rect x="63.9" y="106.0" width="6" height="28.0" rx="2" fill="var(--g-kick)" opacity="1.00"/><rect x="117.6" y="109.6" width="6" height="20.8" rx="2" fill="var(--g-kick)" opacity="0.74"/><rect x="206.9" y="106.9" width="6" height="26.2" rx="2" fill="var(--g-kick)" opacity="0.94"/><rect x="314.2" y="108.7" width="6" height="22.6" rx="2" fill="var(--g-kick)" opacity="0.80"/><rect x="349.9" y="106.0" width="6" height="28.0" rx="2" fill="var(--g-kick)" opacity="1.00"/><rect x="403.6" y="109.6" width="6" height="20.8" rx="2" fill="var(--g-kick)" opacity="0.74"/><rect x="492.9" y="106.9" width="6" height="26.2" rx="2" fill="var(--g-kick)" opacity="0.94"/><rect x="546.6" y="110.5" width="6" height="19.0" rx="2" fill="var(--g-kick)" opacity="0.68"/><line x1="58" y1="8" x2="58" y2="144" class="gt-playhead"/></svg>
+          </div>
+          <ul class="groove-genres" aria-label="Styles in the dataset">
+            <li>Afrobeat</li><li>Afro-Cuban</li><li>Blues</li><li>Country</li><li>Dance</li><li>Funk</li><li>Gospel</li><li>Highlife</li><li>Hip-hop</li><li>Jazz</li><li>Latin</li><li>Middle Eastern</li><li>New Orleans</li><li>Pop</li><li>Punk</li><li>Reggae</li><li>Rock</li><li>Soul</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="credits-note reveal">The Groove MIDI Dataset is by Jon Gillick, Adam Roberts, Jesse Engel, Douglas Eck and David Bamman (&ldquo;Learning to Groove with Inverse Sequence Transformations&rdquo;, ICML 2019), made available by Google under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. The Grooves tab downloads it for you (3&nbsp;MB), and the About dialog credits its drummers. <a href="https://magenta.withgoogle.com/datasets/groove" target="_blank" rel="noopener">More about the dataset</a>.</p>
+    </section>
+
+    <section id="download">
+      <div class="section-head reveal">
+        <span class="eyebrow">Download</span>
+        <h2>Get Lithium Drums</h2>
+        <p>Free for Linux, Windows and macOS. Each installer lets you pick the standalone app and the plugin formats you want.</p>
+      </div>
+      <div class="formats reveal" aria-label="Formats">
+        <span>Standalone</span><span>VST3</span><span>CLAP</span><span>AU · macOS</span>
+      </div>
+      <div class="download-grid">
+        <div class="download-item reveal" data-os="linux">
+          <a href="https://github.com/thecalamityjoe87/LithiumDrums/releases" target="_blank" rel="noopener" aria-label="Download for Linux">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg></div>
+            <div class="download-label">Linux</div>
+            <div class="download-file">.tar.gz · x86_64</div>
+            <p class="download-desc">Unpack it and double-click "Install Lithium Drums". It installs into your home folder, no password needed, and adds an app-menu entry.</p>
+            <span class="download-cta">Download<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l5 5 5-5M8 1v13"/></svg></span>
+          </a>
+        </div>
+        <div class="download-item reveal" data-os="windows">
+          <a href="https://github.com/thecalamityjoe87/LithiumDrums/releases" target="_blank" rel="noopener" aria-label="Download for Windows">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></div>
+            <div class="download-label">Windows</div>
+            <div class="download-file">-windows-setup.exe</div>
+            <p class="download-desc">Run the setup. If SmartScreen warns you, choose More info, then Run anyway.</p>
+            <span class="download-cta">Download<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l5 5 5-5M8 1v13"/></svg></span>
+          </a>
+        </div>
+        <div class="download-item reveal" data-os="mac">
+          <a href="https://github.com/thecalamityjoe87/LithiumDrums/releases" target="_blank" rel="noopener" aria-label="Download for macOS">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M2 19h20"/></svg></div>
+            <div class="download-label">macOS</div>
+            <div class="download-file">-macos.pkg</div>
+            <p class="download-desc">Open the package. If macOS refuses it, allow it under System Settings › Privacy &amp; Security, Open Anyway.</p>
+            <span class="download-cta">Download<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l5 5 5-5M8 1v13"/></svg></span>
+          </a>
+        </div>
+        <div class="download-item reveal">
+          <a href="https://github.com/thecalamityjoe87/LithiumDrums#building" target="_blank" rel="noopener" aria-label="Build it from source">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+            <div class="download-label">Build it yourself</div>
+            <div class="download-file">CMake · Ninja · C++20</div>
+            <p class="download-desc">One script on every platform. JUCE and the other dependencies are fetched on the first configure.</p>
+            <span class="download-cta">View instructions<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <ol class="steps">
+        <li class="reveal">
+          <h3>Install</h3>
+          <p>Pick the standalone app and the plugin formats you use. Run the Linux installer again to update or remove it.</p>
+        </li>
+        <li class="reveal">
+          <h3>Open it</h3>
+          <p>Launch the app, or rescan plugins in your DAW and add Lithium Drums to an instrument track.</p>
+        </li>
+        <li class="reveal">
+          <h3>Get a kit</h3>
+          <p>Press <strong>Browse</strong> in the header and download a kit. For rock, start with <strong>CrocellKit</strong> or <strong>Naked Drums</strong>.</p>
+        </li>
+      </ol>
+
+      <p class="note reveal"><strong>Early software.</strong> Everything works, but expect rough edges and changes before 1.0. The installers aren't signed yet, which is why Windows and macOS warn you the first time.</p>
+    </section>
+
+    <section id="credits">
+      <div class="section-head reveal">
+        <span class="eyebrow">Open source</span>
+        <h2>Free software, built on generous work</h2>
+        <p>Lithium Drums is free software under the GNU Affero General Public License v3. It stands on these projects, and on the drummers and engineers who gave their recordings away.</p>
+      </div>
+      <ul class="credits reveal">
+        <li><a href="https://juce.com" target="_blank" rel="noopener">JUCE</a></li>
+        <li><a href="https://github.com/steinbergmedia/vst3sdk" target="_blank" rel="noopener">VST3 SDK</a></li>
+        <li><a href="https://github.com/free-audio/clap" target="_blank" rel="noopener">CLAP</a></li>
+        <li><a href="https://www.7-zip.org/sdk.html" target="_blank" rel="noopener">LZMA SDK</a></li>
+        <li><a href="https://drumgizmo.org" target="_blank" rel="noopener">DrumGizmo kits</a></li>
+        <li><a href="https://magenta.withgoogle.com/datasets/groove" target="_blank" rel="noopener">Groove MIDI Dataset</a></li>
+        <li><span>HOMULA-RIR</span></li>
+        <li><a href="https://fonts.google.com/specimen/Barlow" target="_blank" rel="noopener">Barlow</a></li>
+        <li><a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Mono</a></li>
+      </ul>
+      <p class="credits-note reveal">The kits are their authors', under the licences listed above. The full notices ship with every package as <span class="mono">THIRD-PARTY-NOTICES.txt</span>; the licence is in <a href="https://github.com/thecalamityjoe87/LithiumDrums/blob/main/LICENSE" target="_blank" rel="noopener">LICENSE</a>.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="reveal">
+        <span class="eyebrow">Community</span>
+        <h2>Join in</h2>
+        <p>Source code: <a href="https://github.com/thecalamityjoe87/LithiumDrums" target="_blank" rel="noopener">github.com/thecalamityjoe87/LithiumDrums</a></p>
+        <p>Found a bug or have an idea? Open it on the <a href="https://github.com/thecalamityjoe87/LithiumDrums/issues" target="_blank" rel="noopener">Issues</a> page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year">2026</span> Isaac Joseph · Calamity Audio · Free software under the GNU AGPLv3</small>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
