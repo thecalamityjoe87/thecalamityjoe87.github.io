@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Lithium Studio: a free, open-source music studio for Linux, Windows and macOS, in the spirit of GarageBand. Instrument and audio tracks, a virtual drummer, a guitar pedalboard and amp, pitch correction for vocals, and a library of sounds and loops.">
+  <meta name="theme-color" content="#0e1318">
+  <meta property="og:title" content="Lithium Studio">
+  <meta property="og:description" content="A free, open-source music studio for making songs, in the spirit of GarageBand. For Linux, Windows and macOS.">
+  <meta property="og:image" content="https://thecalamityjoe87.github.io/lithium-studio/assets/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Lithium Studio</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icon-64.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#home" aria-label="Lithium Studio, back to top">
+        <img src="assets/icon.png" alt="" width="34" height="34">
+        <b>Lithium</b><span>Studio</span>
+      </a>
+      <nav class="top-nav" aria-label="Main">
+        <div class="nav-tabs">
+          <a href="#features">Features</a>
+          <a href="#tour">Tour</a>
+          <a href="#download">Download</a>
+        </div>
+        <a class="icon-link" href="https://github.com/thecalamityjoe87/LithiumStudio" target="_blank" rel="noopener" aria-label="GitHub repository">
+          <svg viewBox="0 0 16 16" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content" id="home">
+    <section class="hero">
+      <span class="badge hero-in" style="--hero-delay:0s"><span class="dot" aria-hidden="true"></span><span class="mono">v0.15.1</span> Alpha, in active development</span>
+      <h1 class="hero-in" style="--hero-delay:.08s"><span>Make music,</span> <em>simply.</em> <span>Free and open source.</span></h1>
+      <p class="lead hero-in" style="--hero-delay:.16s"><strong>A free, open-source music studio for making songs.</strong> Instrument and audio tracks, a virtual drummer, a guitar pedalboard and amp, pitch correction for vocals, and a library of sounds and loops, in the spirit of GarageBand.</p>
+
+      <div class="lcd hero-in" style="--hero-delay:.24s" aria-hidden="true">
+        <div class="lcd-cell pos"><span class="lcd-value" id="lcd-pos">10.3</span><span class="lcd-label">Bar · Beat</span></div>
+        <div class="lcd-cell"><span class="lcd-value">120.0</span><span class="lcd-label">BPM</span></div>
+        <div class="lcd-cell"><span class="lcd-value">4/4</span><span class="lcd-label">Time</span></div>
+        <div class="lcd-cell key"><span class="lcd-value">C maj</span><span class="lcd-label">Key</span></div>
+      </div>
+
+      <p class="actions hero-in" style="--hero-delay:.32s">
+        <a class="btn primary" href="#download">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l5 5 5-5M8 1v13"/></svg>
+          Download
+        </a>
+        <a class="btn ghost" href="https://github.com/thecalamityjoe87/LithiumStudio" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4L1 8l4 4M11 4l4 4-4 4"/></svg>
+          View on GitHub
+        </a>
+      </p>
+      <p class="platforms hero-in" style="--hero-delay:.36s">Linux, Windows and macOS · GNU GPLv3 · The sibling of <a href="../lithium-drums/">Lithium Drums</a></p>
+
+      <div class="hero-shot shot screen-card hero-in" style="--hero-delay:.44s">
+        <img src="assets/arrangement.webp" width="1600" height="1000" alt="The main window: a drummer, bass, guitar, piano and vocal track arranged into Intro, Verse and Chorus sections, with the Drummer's controls below" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>A whole song's worth of features</h2>
+        <p>Every region below is something Lithium Studio does. Press play and the playhead runs through them, or click any region to jump straight to it.</p>
+      </div>
+
+      <div class="arr reveal" id="arr">
+        <div class="arr-transport" aria-label="Feature tour transport">
+          <button type="button" class="arr-btn" data-step="-1" aria-label="Previous feature"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v10M13 3L6 8l7 5z"/></svg></button>
+          <button type="button" class="arr-btn play" id="arr-play" aria-label="Play"><svg class="i-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg><svg class="i-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg></button>
+          <button type="button" class="arr-btn" data-step="1" aria-label="Next feature"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v10M3 3l7 5-7 5z"/></svg></button>
+          <div class="arr-lcd mono" aria-hidden="true">
+            <span><b id="arr-pos">01.1</b><i>Bar · Beat</i></span>
+            <span><b>90.0</b><i>BPM</i></span>
+            <span class="wide"><b id="arr-count">01/12</b><i>Feature</i></span>
+          </div>
+        </div>
+
+        <div class="arr-tracks" style="--bars:24">
+          <div class="arr-row arr-ruler"><div class="arr-head">Tracks</div><div class="arr-lane"><span style="--s:0">1</span><span style="--s:2">3</span><span style="--s:4">5</span><span style="--s:6">7</span><span style="--s:8">9</span><span style="--s:10">11</span><span style="--s:12">13</span><span style="--s:14">15</span><span style="--s:16">17</span><span style="--s:18">19</span><span style="--s:20">21</span><span style="--s:22">23</span></div></div>
+          <div class="arr-row arr-sections"><div class="arr-head">Sections</div><div class="arr-lane"><span style="--s:0;--l:6;--tc:var(--t-keys)">Write</span><span style="--s:6;--l:6;--tc:var(--t-audio)">Record</span><span style="--s:12;--l:6;--tc:var(--t-bass)">Shape</span><span style="--s:18;--l:6;--tc:var(--t-synths)">Finish</span></div></div>
+          <div class="arr-row" style="--tc:var(--t-drums)">
+            <div class="arr-head"><span class="arr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="8" rx="9" ry="3.5"/><path d="M3 8v8c0 1.9 4 3.5 9 3.5s9-1.6 9-3.5V8"/><path d="M8 2.5l3 5M16 2.5l-3 5"/></svg></span><span class="arr-name">Drummer<small>Rock</small></span></div>
+            <div class="arr-lane">
+              <button type="button" class="region beats" style="--s:6;--l:2" data-i="3" aria-controls="feat-4" aria-label="A virtual drummer"><span class="region-name">Drummer</span><span class="region-body"></span></button>
+              <button type="button" class="region beats" style="--s:20;--l:2" data-i="10" aria-controls="feat-11" aria-label="One file per song"><span class="region-name">Session</span><span class="region-body"></span></button>
+            </div>
+          </div>
+          <div class="arr-row" style="--tc:var(--t-bass)">
+            <div class="arr-head"><span class="arr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></span><span class="arr-name">Bass<small>Picked Bass</small></span></div>
+            <div class="arr-lane">
+              <button type="button" class="region notes" style="--s:4;--l:2" data-i="2" aria-controls="feat-3" aria-label="Song sections"><span class="region-name">Sections</span><span class="region-body"></span></button>
+              <button type="button" class="region notes" style="--s:18;--l:2" data-i="9" aria-controls="feat-10" aria-label="Mix and export"><span class="region-name">Mix</span><span class="region-body"></span></button>
+            </div>
+          </div>
+          <div class="arr-row" style="--tc:var(--t-guitar)">
+            <div class="arr-head"><span class="arr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="9" cy="7" r="1.5"/><circle cx="15" cy="7" r="1.5"/><circle cx="12" cy="16" r="3"/></svg></span><span class="arr-name">Guitar<small>Rig · British</small></span></div>
+            <div class="arr-lane">
+              <button type="button" class="region wave" style="--s:8;--l:2" data-i="4" aria-controls="feat-5" aria-label="Guitar and bass rig"><span class="region-name">Rig</span><span class="region-body"></span></button>
+              <button type="button" class="region wave" style="--s:12;--l:2" data-i="6" aria-controls="feat-7" aria-label="Flex time"><span class="region-name">Flex</span><span class="region-body"></span></button>
+            </div>
+          </div>
+          <div class="arr-row" style="--tc:var(--t-keys)">
+            <div class="arr-head"><span class="arr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 13v7M12 13v7M16 13v7"/><path d="M7 4v9h2V4M15 4v9h2V4"/></svg></span><span class="arr-name">Keys<small>Soft Piano</small></span></div>
+            <div class="arr-lane">
+              <button type="button" class="region notes" style="--s:0;--l:2" data-i="0" aria-controls="feat-1" aria-label="Play and record"><span class="region-name">Play</span><span class="region-body"></span></button>
+              <button type="button" class="region notes" style="--s:16;--l:2" data-i="8" aria-controls="feat-9" aria-label="Your plug-ins and gear"><span class="region-name">Plug-ins</span><span class="region-body"></span></button>
+            </div>
+          </div>
+          <div class="arr-row" style="--tc:var(--t-audio)">
+            <div class="arr-head"><span class="arr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg></span><span class="arr-name">Voice<small>Input 1</small></span></div>
+            <div class="arr-lane">
+              <button type="button" class="region wave" style="--s:10;--l:2" data-i="5" aria-controls="feat-6" aria-label="Vocals in tune"><span class="region-name">Tune</span><span class="region-body"></span></button>
+              <button type="button" class="region wave" style="--s:22;--l:2" data-i="11" aria-controls="feat-12" aria-label="Never lose a take"><span class="region-name">Recovery</span><span class="region-body"></span></button>
+            </div>
+          </div>
+          <div class="arr-row" style="--tc:var(--t-loops)">
+            <div class="arr-head"><span class="arr-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg></span><span class="arr-name">Loops<small>Library</small></span></div>
+            <div class="arr-lane">
+              <button type="button" class="region notes" style="--s:2;--l:2" data-i="1" aria-controls="feat-2" aria-label="Loops that fit"><span class="region-name">Loops</span><span class="region-body"></span></button>
+              <button type="button" class="region notes" style="--s:14;--l:2" data-i="7" aria-controls="feat-8" aria-label="Sound packs and Freesound"><span class="region-name">Sounds</span><span class="region-body"></span></button>
+            </div>
+          </div>
+          <div class="arr-playhead" aria-hidden="true"></div>
+        </div>
+
+        <div class="arr-panel">
+          <article class="feat on" id="feat-1" style="--tc:var(--t-keys)">
+            <div class="feat-head"><span class="feat-dot"></span>Write<span class="mono">Bars 01–02</span></div>
+            <div class="feat-body">
+              <h3>Play and record</h3>
+              <p>Play instruments from a MIDI keyboard, your computer keyboard or the on-screen keys, or record a mic, a guitar or a stereo source, with a count-in if you like.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>MIDI keyboard</li><li>Computer keys</li><li>On-screen keys</li><li>Count-in</li></ul>
+              <a class="feat-more" href="#tour-start">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-2" style="--tc:var(--t-loops)">
+            <div class="feat-head"><span class="feat-dot"></span>Write<span class="mono">Bars 03–04</span></div>
+            <div class="feat-body">
+              <h3>Loops that fit</h3>
+              <p>Loops from the library follow your song's key and tempo, and the tempo and time signature can change partway through the song.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>Follows the key</li><li>Follows the tempo</li><li>Tempo changes</li></ul>
+            </div>
+          </article>
+          <article class="feat" id="feat-3" style="--tc:var(--t-bass)">
+            <div class="feat-head"><span class="feat-dot"></span>Write<span class="mono">Bars 05–06</span></div>
+            <div class="feat-body">
+              <h3>Song sections</h3>
+              <p>Mark the intro, verse and chorus above your tracks, then drag a section to move its music on every track, or Alt-drag to copy it.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>Intro</li><li>Verse</li><li>Chorus</li><li>Alt-drag to copy</li></ul>
+            </div>
+          </article>
+          <article class="feat" id="feat-4" style="--tc:var(--t-drums)">
+            <div class="feat-head"><span class="feat-dot"></span>Record<span class="mono">Bars 07–08</span></div>
+            <div class="feat-body">
+              <h3>A virtual drummer</h3>
+              <p>Five styles of grooves played by real drummers. Choose how busy and how loud, which pieces play, how often it fills and how much it swings.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>Rock</li><li>Pop</li><li>Funk &amp; Soul</li><li>Hip-Hop</li><li>Songwriter</li></ul>
+              <a class="feat-more" href="#tour-drummer">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-5" style="--tc:var(--t-guitar)">
+            <div class="feat-head"><span class="feat-dot"></span>Record<span class="mono">Bars 09–10</span></div>
+            <div class="feat-body">
+              <h3>Guitar and bass rig</h3>
+              <p>Twenty stompboxes and an amp with six voices and swappable cabinets, built from GxPlugins, Guitarix and KlonCentaur. There's a tuner and a noise gate, too.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>20 pedals</li><li>6 amp voices</li><li>Tuner</li><li>Noise gate</li></ul>
+              <a class="feat-more" href="#tour-rig">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-6" style="--tc:var(--t-audio)">
+            <div class="feat-head"><span class="feat-dot"></span>Record<span class="mono">Bars 11–12</span></div>
+            <div class="feat-body">
+              <h3>Vocals in tune</h3>
+              <p>Tune keeps a voice in key as you sing, from a gentle nudge to a hard, robotic snap. Or edit each sung note by hand in Pitch mode.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>Lock to key</li><li>Follow MIDI</li><li>Pitch editor</li></ul>
+              <a class="feat-more" href="#tour-tune">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-7" style="--tc:var(--t-guitar)">
+            <div class="feat-head"><span class="feat-dot"></span>Shape<span class="mono">Bars 13–14</span></div>
+            <div class="feat-body">
+              <h3>Flex time</h3>
+              <p>Drag the hits in a recording to new places while the audio in between stretches to fit, or quantize them to the grid like notes.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>Move hits</li><li>Quantize audio</li></ul>
+              <a class="feat-more" href="#tour-editor">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-8" style="--tc:var(--t-loops)">
+            <div class="feat-head"><span class="feat-dot"></span>Shape<span class="mono">Bars 15–16</span></div>
+            <div class="feat-body">
+              <h3>Sound packs and Freesound</h3>
+              <p>Lithium Basics is built in, with more packs a click away in Manage Sounds. Add a free Freesound.org API key and you can search thousands of free loops, too.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>Lithium Basics</li><li>Manage Sounds</li><li>Freesound</li></ul>
+              <a class="feat-more" href="#tour-sounds">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-9" style="--tc:var(--t-keys)">
+            <div class="feat-head"><span class="feat-dot"></span>Shape<span class="mono">Bars 17–18</span></div>
+            <div class="feat-body">
+              <h3>Your plug-ins and gear</h3>
+              <p>VST3 and LV2 on Linux and Windows, VST3 and Audio Units on macOS, scanned in a helper process so one that crashes is just skipped. Controllers from Akai, Arturia, Novation and more are mapped out of the box.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>VST3</li><li>LV2</li><li>Audio Units</li><li>Mackie Control</li></ul>
+            </div>
+          </article>
+          <article class="feat" id="feat-10" style="--tc:var(--t-bass)">
+            <div class="feat-head"><span class="feat-dot"></span>Finish<span class="mono">Bars 19–20</span></div>
+            <div class="feat-body">
+              <h3>Mix and export</h3>
+              <p>EQ and effects on every track, sends to a shared reverb and delay, and automation to change them over the song. Export the song or each track on its own.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>WAV</li><li>FLAC</li><li>OGG</li><li>MP3</li><li>Stems</li></ul>
+              <a class="feat-more" href="#tour-mixer">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-11" style="--tc:var(--t-drums)">
+            <div class="feat-head"><span class="feat-dot"></span>Finish<span class="mono">Bars 21–22</span></div>
+            <div class="feat-body">
+              <h3>One file per song</h3>
+              <p>A session is a single <span class="mono">.lisession</span> file holding every recording and loop it uses. Move it, back it up, or send it to a friend on any platform.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>.lisession</li><li>Linux</li><li>Windows</li><li>macOS</li></ul>
+              <a class="feat-more" href="#tour-sessions">See it in the tour</a>
+            </div>
+          </article>
+          <article class="feat" id="feat-12" style="--tc:var(--t-audio)">
+            <div class="feat-head"><span class="feat-dot"></span>Finish<span class="mono">Bars 23–24</span></div>
+            <div class="feat-body">
+              <h3>Never lose a take</h3>
+              <p>Recordings go to disk as you play and a recovery copy keeps up as you work. If the app ever crashes, your unsaved work comes back, even a take that was cut short.</p>
+            </div>
+            <div class="feat-side">
+              <ul class="feat-tags"><li>Recovery copy</li><li>Crash recovery</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tour</span>
+        <h2>A closer look</h2>
+        <p>Click any screenshot to see it full size.</p>
+      </div>
+
+      <div class="showcase">
+        <div id="tour-start" class="showcase-row compact reveal" style="--tc:var(--t-keys)">
+          <div class="showcase-media shot screen-card"><img src="assets/templates.webp" width="890" height="700" alt="The New Session window: Empty Session, Keyboard Collection, Voice, Beat and Songwriter templates, with tempo, time signature and key below" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">01</span>Start a song</span>
+            <h3>From a blank page to playing in seconds</h3>
+            <p>Start from a template, from an empty session with one instrument to a full songwriter band, with the tempo, time and key already set.</p>
+            <ul>
+              <li>Instrument, audio, vocal, guitar or bass, Drummer and Sampler tracks</li>
+              <li>Double-click an instrument lane for a 4-bar chord region to build on</li>
+              <li>Split, trim, fade, duplicate, reverse and transpose regions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tour-sounds" class="showcase-row reverse reveal" style="--tc:var(--t-strings)">
+          <div class="showcase-media panel shot screen-card"><img src="assets/sounds.webp" width="1180" height="760" alt="The Manage Sounds window: categories on the left, sound packs as cards under category headings, and the chosen pack's size, license and Download button on the right" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">02</span>Sounds</span>
+            <h3>Find a sound, drop it in</h3>
+            <p>Browse keys, drums, bass, synths, strings and more in the library beside the timeline, search every pack at once, and drag a sound or loop onto a track.</p>
+            <p>Lithium Basics comes with the app. Sounds › Manage Sounds… lists every other pack to download, update or remove, with its size, credits and license.</p>
+          </div>
+        </div>
+
+        <div class="callout reveal" style="--tc:var(--t-loops)">
+          <div class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8 11h6M11 8v6"/></svg></div>
+          <div class="callout-body">
+            <span class="eyebrow">Freesound</span>
+            <h3>Thousands more loops, free</h3>
+            <p>Get a free API key from Freesound.org, paste it into Lithium Studio, and the loop browser searches Freesound's community library alongside your own packs. Only loops you're free to use (CC0 and CC BY) are listed, and each one you add is saved with credit to its author.</p>
+          </div>
+          <a class="btn ghost" href="https://freesound.org/apiv2/apply/" target="_blank" rel="noopener">Get a free key</a>
+        </div>
+
+        <div id="tour-drummer" class="showcase-feature reveal" style="--tc:var(--t-drums)">
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">03</span>Drummer</span>
+            <h3>A drummer who plays along</h3>
+            <p>Pick Rock, Pop, Funk &amp; Soul, Hip-Hop or Songwriter, then drag the puck between simple and complex, soft and loud. Choose which pieces play and whether it keeps time on the hi-hat or the ride. It plays grooves real drummers recorded for the Groove MIDI Dataset, adds a fill before each section, and turns into an ordinary MIDI region whenever you'd rather edit the notes yourself.</p>
+          </div>
+          <div class="showcase-media shot screen-card"><img src="assets/drummer.webp" width="1008" height="233" alt="The Drummer's controls: Rock, Pop, Funk &amp; Soul, Hip-Hop and Songwriter styles, a Simple to Complex and Soft to Loud pad, the pieces it plays, hi-hat or ride time-keeping, and Fills and Swing knobs" loading="lazy"></div>
+        </div>
+
+        <div id="tour-editor" class="showcase-row reveal" style="--tc:var(--t-keys)">
+          <div class="showcase-media shot screen-card"><img src="assets/piano-roll.webp" width="1600" height="1000" alt="The piano roll: a piano track's chord region as note bars over a keyboard, with velocity stems below and quantize settings on the left" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">04</span>Editor</span>
+            <h3>Shape every note</h3>
+            <p>Click to add a note, drag to move it, drag its end to resize it, and set how hard it's played in the velocity lane below.</p>
+            <ul>
+              <li>Quantize with your own strength and swing</li>
+              <li>Flex audio: move the hits in a recording, or quantize them</li>
+              <li>Draw automation for any track</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tour-rig" class="showcase-feature reveal" style="--tc:var(--t-guitar)">
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">05</span>Rig</span>
+            <h3>A pedalboard and an amp, built in</h3>
+            <p>Guitar and bass tracks play through a full signal chain: stompboxes in any order you drag them, then an amp and its speaker cabinet. There's a tuner in the display whenever you need it.</p>
+          </div>
+          <div class="showcase-media shot screen-card"><img src="assets/rig.webp" width="1308" height="254" alt="The Rig tab: Yellow Drive, Super Fuzz and Shimmer Chorus pedals chained into the British amp with a 4x12 cabinet" loading="lazy"></div>
+          <ul class="voice-grid" aria-label="The amp's six voices">
+            <li class="voice"><strong>Clean</strong><span>The most headroom, sparkling and clean</span></li>
+            <li class="voice"><strong>Crunch</strong><span>Tweed tubes that break up as you dig in</span></li>
+            <li class="voice"><strong>Chime</strong><span>On the edge of breakup, so it jangles</span></li>
+            <li class="voice"><strong>British</strong><span>Hot and compressed, a classic rock crunch</span></li>
+            <li class="voice"><strong>High Gain</strong><span>Fully saturated, even when you pick softly</span></li>
+            <li class="voice"><strong>Bass</strong><span>Round and mostly clean, hairier turned up</span></li>
+          </ul>
+        </div>
+
+        <div class="showcase-row reverse compact reveal" style="--tc:var(--t-guitar)">
+          <div class="showcase-media shot screen-card"><img src="assets/pedals.webp" width="822" height="620" alt="The Add a pedal window: twenty stompboxes in Drive &amp; Boost, Fuzz &amp; Distortion, Filter &amp; Dynamics and Modulation groups" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">06</span>Pedals</span>
+            <h3>Twenty stompboxes to choose from</h3>
+            <p>Most of their sound comes from GxPlugins, Guitarix and KlonCentaur, each one checked against the original.</p>
+            <ul>
+              <li>Drive &amp; Boost: six pedals, from a clean boost to a tube drive</li>
+              <li>Fuzz &amp; Distortion: four, octave fuzz included</li>
+              <li>Filter &amp; Dynamics: auto-wah, swell, compressor and gate</li>
+              <li>Modulation, delay and reverb: chorus to spring tank</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tour-tune" class="showcase-row compact reveal" style="--tc:var(--t-audio)">
+          <div class="showcase-media shot screen-card"><img src="assets/tune.webp" width="584" height="298" alt="The Tune panel on a vocal track: Correction, Speed and Fine Tune knobs, the key, the notes it can land on, and Follow MIDI" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">07</span>Tune</span>
+            <h3>Stay in key as you sing</h3>
+            <p>Tune corrects a voice in real time, locked to the song's key, from a gentle, natural nudge to a hard, robotic snap.</p>
+            <p>Choose which notes it can land on, or let it follow the notes of a MIDI track instead.</p>
+          </div>
+        </div>
+
+        <div class="showcase-feature reveal" style="--tc:var(--t-audio)">
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">08</span>Pitch</span>
+            <h3>Every sung note, on its own row</h3>
+            <p>Turn on Pitch for a recording and the editor shows each note you sang, with how far off it is. Drag one to a new pitch, double-click it to center it, snap the whole take to the key or smooth out its vibrato. Reset puts it back exactly the way it was sung.</p>
+          </div>
+          <div class="showcase-media shot screen-card"><img src="assets/pitch.webp" width="1008" height="312" alt="The Pitch editor: each sung note drawn as a bar on its own row, with how far it is off pitch in cents" loading="lazy"></div>
+        </div>
+
+        <div id="tour-mixer" class="showcase-row reveal" style="--tc:var(--t-bass)">
+          <div class="showcase-media shot screen-card"><img src="assets/mixer.webp" width="1600" height="1000" alt="The Mixer tab: a channel strip per track with fader, pan, reverb and delay sends, and the master fader" loading="lazy"></div>
+          <div class="showcase-text">
+            <span class="eyebrow"><span class="num">09</span>Mixer</span>
+            <h3>Mix it, then share it</h3>
+            <p>Every track has a fader, pan and sends to a shared reverb and delay, plus an EQ and its own chain of effects.</p>
+            <ul>
+              <li>Compressor, limiter, gate, EQ, filter, distortion, reverb, echo, chorus, phaser, tremolo and pitch shift built in</li>
+              <li>Draw automation to change them over the song</li>
+              <li>Export the song or each track as WAV, FLAC, OGG or MP3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tour-sessions" class="callout reveal" style="--tc:var(--t-loops)">
+          <div class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 14v3M12 12v7M15 14v3"/></svg></div>
+          <div class="callout-body">
+            <span class="eyebrow">Sessions</span>
+            <h3>One file, everything inside</h3>
+            <p>Like a GarageBand project, a <span class="mono">.lisession</span> file holds your session and every recording, loop and audio file it uses, so it opens the same on Linux, Windows or macOS.</p>
+            <p>Your saved file only changes when you save, a recovery copy keeps up as you work, and recordings line up with the music on their own.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="section-head reveal">
+        <span class="eyebrow">Download</span>
+        <h2>Get Lithium Studio</h2>
+        <p>Free for Linux, Windows and macOS. Each release is built and published on GitHub.</p>
+      </div>
+      <div class="download-grid">
+        <div class="download-item reveal" data-os="linux">
+          <a href="https://github.com/thecalamityjoe87/LithiumStudio/releases" target="_blank" rel="noopener" aria-label="Download for Linux">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg></div>
+            <div class="download-label">Linux</div>
+            <div class="download-file">.tar.gz · AppImage</div>
+            <p class="download-desc">Unpack it and double-click "Install Lithium Studio". It installs into your home folder, no password needed, and adds an app-menu entry. There's an AppImage too.</p>
+            <span class="download-cta">Download<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l5 5 5-5M8 1v13"/></svg></span>
+          </a>
+        </div>
+        <div class="download-item reveal" data-os="windows">
+          <a href="https://github.com/thecalamityjoe87/LithiumStudio/releases" target="_blank" rel="noopener" aria-label="Download for Windows">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></div>
+            <div class="download-label">Windows</div>
+            <div class="download-file">-windows-setup.exe · .zip</div>
+            <p class="download-desc">Run the setup, or unpack the zip. If SmartScreen warns you, choose More info, then Run anyway.</p>
+            <span class="download-cta">Download<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l5 5 5-5M8 1v13"/></svg></span>
+          </a>
+        </div>
+        <div class="download-item reveal" data-os="mac">
+          <a href="https://github.com/thecalamityjoe87/LithiumStudio/releases" target="_blank" rel="noopener" aria-label="Download for macOS">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M2 19h20"/></svg></div>
+            <div class="download-label">macOS</div>
+            <div class="download-file">-macos.pkg · .dmg</div>
+            <p class="download-desc">For Apple Silicon and Intel, macOS 12 or later. If macOS refuses it, choose Open Anyway under System Settings › Privacy &amp; Security.</p>
+            <span class="download-cta">Download<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l5 5 5-5M8 1v13"/></svg></span>
+          </a>
+        </div>
+        <div class="download-item reveal">
+          <a href="https://github.com/thecalamityjoe87/LithiumStudio#building" target="_blank" rel="noopener" aria-label="Build it from source">
+            <div class="download-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+            <div class="download-label">Build it yourself</div>
+            <div class="download-file">CMake · C++20</div>
+            <p class="download-desc">Clone with submodules and build with CMake on any of the three platforms.</p>
+            <span class="download-cta">View instructions<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <ol class="steps">
+        <li class="reveal">
+          <h3>Install</h3>
+          <p>Run the installer for your system. On Linux, run it again to update or remove Lithium Studio.</p>
+        </li>
+        <li class="reveal">
+          <h3>Get sounds</h3>
+          <p>Lithium Basics is built in. For more, open <strong>Sounds › Manage Sounds…</strong> and download the <strong>Starter</strong> sounds: piano, drums, bass, guitar and strings.</p>
+        </li>
+        <li class="reveal">
+          <h3>Pick a template</h3>
+          <p>Start from <strong>Songwriter</strong> for a full band, or <strong>Empty Session</strong> to build up from one instrument.</p>
+        </li>
+      </ol>
+
+      <p class="note reveal"><strong>Alpha software.</strong> Everything works, but expect rough edges and changes before 1.0, and please report anything that breaks. The installers aren't signed yet, which is why Windows and macOS warn you the first time.</p>
+      <p class="note reveal"><strong>Coming from Ikaros Studio?</strong> Lithium Studio used to be called Ikaros Studio. The first time it starts, it moves your settings, session folder and sound packs over, and your <span class="mono">.iksession</span> files still open as they are.</p>
+    </section>
+
+    <section id="credits">
+      <div class="section-head reveal">
+        <span class="eyebrow">Open source</span>
+        <h2>Built on great work</h2>
+        <p>Lithium Studio is free software under the GNU GPL v3 or later, and it stands on these projects. Thank you.</p>
+      </div>
+      <ul class="credits reveal">
+        <li><a href="https://github.com/Tracktion/tracktion_engine" target="_blank" rel="noopener">Tracktion Engine</a></li>
+        <li><a href="https://juce.com" target="_blank" rel="noopener">JUCE</a></li>
+        <li><a href="https://sfz.tools/sfizz" target="_blank" rel="noopener">sfizz</a></li>
+        <li><a href="https://breakfastquay.com/rubberband" target="_blank" rel="noopener">Rubber Band</a></li>
+        <li><a href="https://github.com/brummer10/guitarix" target="_blank" rel="noopener">Guitarix</a></li>
+        <li><a href="https://github.com/brummer10" target="_blank" rel="noopener">GxPlugins</a></li>
+        <li><a href="https://github.com/jatinchowdhury18/KlonCentaur" target="_blank" rel="noopener">KlonCentaur</a></li>
+        <li><a href="https://github.com/x42/fat1.lv2" target="_blank" rel="noopener">fat1</a></li>
+        <li><a href="https://kokkinizita.linuxaudio.org" target="_blank" rel="noopener">zita-at1</a></li>
+        <li><a href="https://github.com/sevagh/pitch-detection" target="_blank" rel="noopener">pitch-detection</a></li>
+        <li><a href="https://magenta.tensorflow.org/datasets/groove" target="_blank" rel="noopener">Groove MIDI Dataset</a></li>
+        <li><a href="https://github.com/richgel999/miniz" target="_blank" rel="noopener">miniz</a></li>
+        <li><a href="https://lame.sourceforge.io" target="_blank" rel="noopener">LAME</a></li>
+        <li><a href="https://ardour.org" target="_blank" rel="noopener">Ardour MIDI maps</a></li>
+        <li><a href="https://fonts.google.com/specimen/Barlow" target="_blank" rel="noopener">Barlow</a></li>
+        <li><a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Mono</a></li>
+        <li><a href="https://lucide.dev" target="_blank" rel="noopener">Lucide</a></li>
+      </ul>
+      <p class="credits-note reveal">Sound packs carry their own licenses, shown in Manage Sounds. The full list, with every license, is in <a href="https://github.com/thecalamityjoe87/LithiumStudio/blob/main/CREDITS" target="_blank" rel="noopener">CREDITS</a>.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="reveal">
+        <span class="eyebrow">Community</span>
+        <h2>Join in</h2>
+        <p>Source code: <a href="https://github.com/thecalamityjoe87/LithiumStudio" target="_blank" rel="noopener">github.com/thecalamityjoe87/LithiumStudio</a></p>
+        <p>Found a bug or have an idea? Open it on the <a href="https://github.com/thecalamityjoe87/LithiumStudio/issues" target="_blank" rel="noopener">Issues</a> page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year">2026</span> Isaac Joseph · Calamity Audio · Free software under the GNU GPL v3</small>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
