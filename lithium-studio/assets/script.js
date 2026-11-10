@@ -13,6 +13,26 @@
     });
   });
 
+  // --- Feature tour: load YouTube only when asked, so the page stays fast and cookie-free until then ---
+  document.querySelectorAll('.video-facade').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-video');
+      // YouTube refuses embeds from pages with no origin to report (Error 153), as when the
+      // page is opened straight from disk, so play it on YouTube itself instead.
+      if(location.protocol === 'file:'){
+        window.open('https://www.youtube.com/watch?v=' + id, '_blank', 'noopener');
+        return;
+      }
+      var frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1';
+      frame.title = 'Lithium Studio feature tour';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      frame.allowFullscreen = true;
+      btn.parentNode.replaceChild(frame, btn);
+    });
+  });
+
   // --- Hero transport readout: counts bars and beats like the app's LCD, at the tempo shown ---
   (function(){
     var pos = document.getElementById('lcd-pos');
