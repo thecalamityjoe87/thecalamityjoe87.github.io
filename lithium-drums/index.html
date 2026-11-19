@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Lithium Drums: a free, open-source acoustic drum sampler with real multi-mic recordings, 21 sound presets, a mixer and effects, and 1,150 grooves played by human drummers. VST3, CLAP, AU and standalone for Linux, Windows and macOS.">
+  <meta name="description" content="Lithium Drums: a free, open-source acoustic drum sampler with real multi-mic recordings, 31 sound presets, a mixer and effects, and 1,150 grooves played by human drummers. VST3, CLAP, AU and standalone for Linux, Windows and macOS.">
   <meta name="theme-color" content="#0e1318">
   <meta property="og:title" content="Lithium Drums">
   <meta property="og:description" content="A free, open-source acoustic drum sampler. Real multi-mic recordings of real kits, a mixer and effects to shape them, and 1,150 grooves played by human drummers.">
@@ -49,7 +49,7 @@
 
       <div class="readout hero-in" style="--hero-delay:.24s" role="list" aria-label="At a glance">
         <div class="readout-cell" role="listitem"><span class="readout-label">Kits</span><span class="readout-value">16</span></div>
-        <div class="readout-cell" role="listitem"><span class="readout-label">Sound presets</span><span class="readout-value">21</span></div>
+        <div class="readout-cell" role="listitem"><span class="readout-label">Sound presets</span><span class="readout-value">31</span></div>
         <div class="readout-cell wide" role="listitem"><span class="readout-label">Kit presets</span><span class="readout-value">18</span></div>
         <div class="readout-cell" role="listitem"><span class="readout-label">Grooves</span><span class="readout-value">1,150</span></div>
         <div class="readout-cell on" role="listitem"><span class="readout-label">Price</span><span class="readout-value">Free</span></div>
@@ -226,13 +226,15 @@
     <section id="presets">
       <div class="section-head reveal">
         <span class="eyebrow">Sound presets</span>
-        <h2>Twenty-one finished sounds</h2>
+        <h2>Thirty-one finished sounds</h2>
         <p>Each sound preset is a whole drum sound, ready for a song: a kit with its drums tuned and shaped, every channel EQ'd and compressed, the mics balanced and the effects and master bus set. Pick one and play, or start from it and make it yours.</p>
       </div>
       <div class="preset-filter reveal" role="group" aria-label="Filter presets by style">
-        <button type="button" class="chip-btn active" data-filter="all" aria-pressed="true">All <span class="mono">21</span></button>
+        <button type="button" class="chip-btn active" data-filter="all" aria-pressed="true">All <span class="mono">31</span></button>
         <button type="button" class="chip-btn" data-filter="Rock" aria-pressed="false">Rock <span class="mono">3</span></button>
         <button type="button" class="chip-btn" data-filter="Metal" aria-pressed="false">Metal <span class="mono">2</span></button>
+        <button type="button" class="chip-btn" data-filter="Djent" aria-pressed="false">Djent <span class="mono">4</span></button>
+        <button type="button" class="chip-btn" data-filter="Modern" aria-pressed="false">Modern <span class="mono">6</span></button>
         <button type="button" class="chip-btn" data-filter="Studio" aria-pressed="false">Studio <span class="mono">2</span></button>
         <button type="button" class="chip-btn" data-filter="Pop" aria-pressed="false">Pop <span class="mono">2</span></button>
         <button type="button" class="chip-btn" data-filter="Funk" aria-pressed="false">Funk <span class="mono">2</span></button>
@@ -275,6 +277,66 @@
             <h3>Forge Hammer</h3>
             <p>Modern metal: a clicky, short kick that cuts through guitars, a tight cracking snare, gated toms and the far rooms pulled out.</p>
             <span class="preset-kit">Naked Drums</span>
+          </li>
+          <li class="preset-card" data-group="Djent" style="--tc:var(--g-kick)">
+            <span class="preset-style">Djent</span>
+            <h3>Big Chug</h3>
+            <p>Djent at its heaviest: a longer, booming kick, a thick snare, low toms that ring out and extra low-mid weight.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Djent" style="--tc:var(--g-kick)">
+            <span class="preset-style">Djent</span>
+            <h3>Cotton Mouth</h3>
+            <p>Bone-dry djent: Low Chug's deep kick with the snare and toms cut short, no room mic and the mids scooped hard.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Djent" style="--tc:var(--g-kick)">
+            <span class="preset-style">Djent</span>
+            <h3>Low Chug</h3>
+            <p>Djent: a deep, round kick under low-tuned guitars with the beater clicking through, a fat snare, low toms that boom, the mids scooped and everything squashed hard.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Djent" style="--tc:var(--g-kick)">
+            <span class="preset-style">Djent</span>
+            <h3>Punching Up</h3>
+            <p>Djent with a lighter hand: the kick's punch sits higher and clicks through, with less sub, a louder snare and gentler squash.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Modern" style="--tc:var(--g-snare)">
+            <span class="preset-style">Modern</span>
+            <h3>Bloody &amp; Bruised</h3>
+            <p>Modern metal, dry and squashed: a kick tuned down with the beater clicking through, a cracking snare, the low mids scooped and parallel crush on the mix.</p>
+            <span class="preset-kit">MuldjordKit</span>
+          </li>
+          <li class="preset-card" data-group="Modern" style="--tc:var(--g-snare)">
+            <span class="preset-style">Modern</span>
+            <h3>Bone Dry</h3>
+            <p>Close mics only and no reverb: a short, tight kick, a snare cut off right after the crack, short toms and the honk taken out of the mids.</p>
+            <span class="preset-kit">Basalt Kits</span>
+          </li>
+          <li class="preset-card" data-group="Modern" style="--tc:var(--g-snare)">
+            <span class="preset-style">Modern</span>
+            <h3>Fat Daddy</h3>
+            <p>A snare tuned down to a fat, low thud that sits level with the kick, its crack rounded off and the mids scooped deep, over a round kick and short toms.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Modern" style="--tc:var(--g-snare)">
+            <span class="preset-style">Modern</span>
+            <h3>Low Drag</h3>
+            <p>Modern rock, darker: a deep kick with real sub under it, a snare that's all body and less crack, the boom kept short and the top rolled off a touch.</p>
+            <span class="preset-kit">CrocellKit</span>
+          </li>
+          <li class="preset-card" data-group="Modern" style="--tc:var(--g-snare)">
+            <span class="preset-style">Modern</span>
+            <h3>Massive Attack</h3>
+            <p>Huge and roomy: the room mics compressed hard, a hall around the kick, a long plate on the snare and the boxiness taken out of the rooms.</p>
+            <span class="preset-kit">Naked Drums</span>
+          </li>
+          <li class="preset-card" data-group="Modern" style="--tc:var(--g-snare)">
+            <span class="preset-style">Modern</span>
+            <h3>Middle Child</h3>
+            <p>Modern rock: a punchy kick with its weight around 80 Hz, a ringing snare with a short plate, a small studio room and a bright top.</p>
+            <span class="preset-kit">Tchimera Drum Kit</span>
           </li>
           <li class="preset-card" data-group="Studio" style="--tc:var(--g-snare)">
             <span class="preset-style">Studio</span>
